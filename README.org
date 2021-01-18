@@ -1,0 +1,30 @@
+#+TITLE: Readme
+#+HTML: <img src="images/header.jpg" align="center">
+
+* TOC :toc:
+- [[#sculpture][Sculpture]]
+  - [[#sculpture-1][Sculpture]]
+  - [[#sculpture-light][Sculpture-light]]
+  - [[#screenshots][Screenshots]]
+
+* Sculpture
+
+A Vivid theme for Emacs, inspired by the colors attributed to Greco-Roman Sculptures.
+
+Monospace fonts are boring -- use variable pitch when it doesn't break indentation / flow.
+
+Readability is second to following a theme.  Being striking is better than being bland and useful.
+
+** Sculpture
+
+Vivid colors over a completely black background.
+
+** Sculpture-light
+
+Sculpture's dark version, but with the foreground and background switched.  Two colors modified for readability.
+
+** Screenshots
+
+[[images/sculpture.jpg]]
+
+[[images/sculpture-light.jpg]]
