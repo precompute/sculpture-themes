@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: January 18, 2021
-;; Version: 0.1.0
+;; Modified: January 20, 2021
+;; Version: 0.1.1
 ;; Keywords: Theme, Dark
 ;; Package-Requires: ((emacs "24")(autothemer))
 ;;
@@ -325,11 +325,11 @@
   (+workspace-tab-selected-face (:foreground ha04 :background ot05))
 
 ;;;;;; +org-todo, custom
-  (+org-todo-cancel  (:box (:color cs00 :line-width -1)))
-  (+org-todo-done    (:foreground ot02))
-  (+org-todo-onhold  (:box (:color ha04 :line-width -1)))
-  (+org-todo-active  (:box (:color ha01 :line-width -1)))
-  (+org-todo-project (:box (:color ot00 :line-width -1)))
+  (+org-todo-cancel  (:inherit 'fixed-pitch :underline (:color cs00 :line-width -1)))
+  (+org-todo-done    (:inherit 'fixed-pitch :underline (:color ot01 :line-width -1)))
+  (+org-todo-onhold  (:inherit 'fixed-pitch :underline (:color ha04 :line-width -1)))
+  (+org-todo-active  (:inherit 'fixed-pitch :underline (:color ha01 :line-width -1)))
+  (+org-todo-project (:inherit 'fixed-pitch :underline (:color ot00 :line-width -1)))
 
 ;;;;;; ido
   (ido-subdir            (:foreground bw13))
@@ -400,13 +400,13 @@
   (org-document-info             (:foreground fg :background ha01 :height 1.2))
   (org-document-info-keyword     (:foreground fg :background ha01 :height 1.2))
   (org-document-title            (:foreground fg :background ha01 :height 1.9))
-  (org-done                      (:inherit 'org-headline-done))
+  (org-done                      (:underline (:color ot02 :line-width -1)))
   (org-drawer                    (:foreground ha00))
   (org-ellipsis                  (:foreground ha00))
   (org-footnote                  (:foreground ha00))
   (org-formula                   (:foreground ha00))
-  (org-headline-done             (:underline (:color ot02 :line-width -1)))
-  (org-headline-todo             (:underline (:color ot09 :line-width -1)))
+  (org-headline-done             nil)
+  (org-headline-todo             nil)
   (org-hide                      (:foreground bg))
   (org-indent                    (:foreground bg))
   (org-latex-and-related         (:foreground ha00))
@@ -429,7 +429,7 @@
   (org-tag-group                 (:foreground cs01))
   (org-target                    (:foreground ha00))
   (org-time-grid                 (:foreground ha00))
-  (org-todo                      (:box (:color ha04 :line-width -1)))
+  (org-todo                      (:underline (:color ot09 :line-width -1)))
   (org-upcoming-deadline         (:foreground ha00))
   (org-upcoming-distant-deadline (:foreground ha00))
   (org-verbatim                  (:foreground cs02 :background ot06))
@@ -497,6 +497,12 @@
   (company-tooltip            (:foreground fg :background ha09 :box (:color bw01)))
   (company-scrollbar-bg       (:background bg))
   (company-scrollbar-fg       (:background bw02))
+
+;;;;;; message
+  (message-header-name    (:foreground ot00 :inherit 'variable-pitch))
+  (message-header-cc      (:foreground ot02 :inherit 'variable-pitch))
+  (message-header-to      (:foreground ot04 :inherit 'variable-pitch))
+  (message-header-subject (:foreground ot05 :inherit 'variable-pitch))
 
 ;;;;;; elfeed
   (elfeed-show-tag-face            (:foreground ha02))
