@@ -5,10 +5,9 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: January 20, 2021
-;; Version: 0.1.1
-;; Keywords: Theme, Dark
-;; Package-Requires: ((emacs "24")(autothemer))
+;; Modified: May 07, 2021
+;; Version: 0.2.0
+;; Package-Requires: ((emacs "26.1")(autothemer "0.2"))
 ;;
 ;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
@@ -57,6 +56,7 @@
 (defface head-outline-6        nil nil)
 (defface head-outline-7        nil nil)
 (defface head-outline-8        nil nil)
+(defface modeline-percent      nil nil)
 (defface modeline-line         nil nil)
 (defface modeline-mode         nil nil)
 (defface modeline-workspace    nil nil)
@@ -70,8 +70,6 @@
 (defface elfeed-title-7        nil nil)
 (defface elfeed-title-8        nil nil)
 (defface elfeed-star-face      nil nil)
-(defface cursor-filled         nil nil)
-(defface cursor-box            nil nil)
 
 (autothemer-deftheme
  sculpture-light "Sculpture-light theme"
@@ -80,12 +78,12 @@
  ((((class color) (min-colors #xFFFFFF)))
 ;;;;; palette
 
-  (bw00 "#000000") (fg "#000000")
+  (fg "#000000")
+  (bw00 "#000000")
   (bw01 "#111111")
   (bw02 "#222222")
   (bw03 "#333333")
   (bw04 "#444444")
-  (bw05 "#555555")
   (bw06 "#666666")
   (bw07 "#777777")
   (bw08 "#888888")
@@ -95,26 +93,25 @@
   (bw12 "#cccccc")
   (bw13 "#dddddd")
   (bw14 "#eeeeee")
-  (bw15 "#ffffff")
 
   (ha00 "#713238")
   (ha01 "#003564")
   (ha02 "#5B542E")
-  (ha03 "#2E2617")
-  (ha04 "#BDA500") (ha04-dark "#C8BF19")
+  (ha04 "#BDA500")
+  (ha04-dark "#C8BF19")
   (ha05 "#421212")
   (ha06 "#642105")
   (ha07 "#767650")
-  (ha08 "#040407") (ha08-light "#FBFBFE")
-  (ha09 "#f0f0f0") (ha09-dark "#080808")
+  (ha08-light "#FBFBFE")
+  (ha09 "#f0f0f0")
   (ha10 "#2B1B26")
-  (ha11 "#811B1B") (ha11-dark "#3D1717")
+  (ha11 "#811B1B")
   (ha12 "#34274B")
 
   (cs00 "#B2280E")
-  (cs01 "#FF6E6F") (cs01-light "#F2D5C3")
+  (cs01 "#FF6E6F")
   (cs02 "#E9A039")
-  (cs03 "#FDFFF3") (bg "#FDFFF3")
+  (bg   "#FDFFF3")
 
   (ot00 "#776677")
   (ot01 "#3E6911")
@@ -122,15 +119,14 @@
   (ot03 "#500D0E")
   (ot04 "#21A167")
   (ot05 "#1979EA")
-  (ot06 "#EFEFEF") (ot06-dark "#101010")
+  (ot06 "#F1ECE4")
   (ot07 "#386C7A")
   (ot08 "#103185")
   (ot09 "#9F143B")
   (ot10 "#713764")
-  (ot11 "#201F0E") (ot11-light "#DFE0F1")
-  (ot12 "#D0CA62")
-  (ot13 "#313020")
-  ) (
+  (ot11 "#201F0E")
+  (ot11-light "#DFE0F1")
+  (ot12 "#D0CA62")) (
 ;;;;; definitions
 ;;;;;; base
   (bold                       (:weight 'bold))
@@ -151,7 +147,7 @@
 
   (default              (:foreground fg :background bg))
   (error                (:foreground cs00))
-  (highlight            (:foreground cs02 :box '(:line-width (0 . -1))))
+  (highlight            (:background cs02))
   (match                (:foreground ot01))
   (menu                 (:foreground fg :background bg))
   (minibuffer-prompt    (:foreground fg :slant 'italic))
@@ -169,8 +165,7 @@
   (font-lock-builtin-face              (:foreground ot05 :weight 'bold))
   (font-lock-comment-face              (:foreground bw07 :background ha09 :slant 'italic))
   (font-lock-comment-delimiter-face    (:foreground bw07 :background ha09 :slant 'italic))
-  (font-lock-constant-face             (:foreground ha04 ;; :underline t
-                                        ))
+  (font-lock-constant-face             (:foreground ha04))
   (font-lock-function-name-face        (:foreground ot09))
   (font-lock-keyword-face              (:foreground ot04 :weight 'bold))
   (font-lock-string-face               (:foreground ha00))
@@ -193,10 +188,11 @@
   (mode-line-inactive         (:foreground bw03 :background bw14 :box (:line-width 1 :color bw12)))
 
 ;;;;;;; custom
-  (modeline-line                     (:inherit 'cursor :foreground fg))
-  (modeline-mode                     (:inherit 'variable-pitch-italic :foreground bw04 :box t))
-  (modeline-workspace                (:inherit 'variable-pitch-italic :foreground bw06))
-  (doom-modeline-highlight           (:inherit 'variable-pitch :foreground ot04))
+  (modeline-line                     (:inherit '(cursor variable-pitch) :foreground fg))
+  (modeline-percent                  (:inherit '(cursor variable-pitch) :foreground bg :background bw00))
+  (modeline-mode                     (:inherit 'variable-pitch :foreground bw04 :weight 'bold))
+  (modeline-workspace                (:inherit 'variable-pitch :foreground bw06))
+  (doom-modeline-highlight           (:inherit 'variable-pitch :foreground ot04 :weight 'bold))
   (doom-modeline-alternate-highlight (:inherit 'variable-pitch :foreground cs02))
 
 ;;;;;; Info mode
@@ -262,7 +258,7 @@
   (ivy-action                      (:foreground fg :slant 'italic))
   (ivy-completion-annotations      (:foreground bw06))
   (ivy-confirm-face                (:foreground ha12))
-  (ivy-current-match               (:foreground ot04 :box '(:line-width (0 . -1)) :weight 'bold))
+  (ivy-current-match               (:underline (:line-width -1 :color ot04) :weight 'bold))
   (ivy-cursor                      (:foreground bg :background fg))
   (ivy-grep-info                   (:foreground fg))
   (ivy-grep-line-number            (:foreground fg))
@@ -284,15 +280,15 @@
   (ivy-yanked-word                 (:foreground ot07))
 
 ;;;;;; Swiper
-  (swiper-background-match-face-1  (:foreground ha01 :box t))
-  (swiper-background-match-face-2  (:foreground ha01 :box t))
-  (swiper-background-match-face-3  (:foreground ot07 :box t))
-  (swiper-background-match-face-4  (:foreground ha12 :box t))
+  (swiper-background-match-face-1  (:inherit 'head-outline-2))
+  (swiper-background-match-face-2  (:inherit 'head-outline-4))
+  (swiper-background-match-face-3  (:inherit 'head-outline-5))
+  (swiper-background-match-face-4  (:inherit 'head-outline-3))
   (swiper-line-face                (:underline ha04 :extend t))
-  (swiper-match-face-1             (:foreground ha07 :box t))
-  (swiper-match-face-2             (:foreground ha01 :box t))
-  (swiper-match-face-3             (:foreground ot07 :box t))
-  (swiper-match-face-4             (:foreground ha06 :box t))
+  (swiper-match-face-1             (:inherit 'head-outline-2 :weight 'bold))
+  (swiper-match-face-2             (:inherit 'head-outline-4 :weight 'bold))
+  (swiper-match-face-3             (:inherit 'head-outline-5 :weight 'bold))
+  (swiper-match-face-4             (:inherit 'head-outline-3 :weight 'bold))
 
 ;;;;;; rainbow-delimiter
   (rainbow-delimiters-base-face       (:foreground cs01))
@@ -386,6 +382,7 @@
   (markdown-header-face-4 (:inherit 'head-outline-4))
   (markdown-header-face-5 (:inherit 'head-outline-5))
   (markdown-header-face-6 (:inherit 'head-outline-6))
+  (markdown-link-face (:inherit 'org-link))
 
 ;;;;;; org
   (org-archived                  (:foreground ha00))
@@ -429,7 +426,7 @@
   (org-tag-group                 (:foreground cs01))
   (org-target                    (:foreground ha00))
   (org-time-grid                 (:foreground ha00))
-  (org-todo                      (:underline (:color ot09 :line-width -1)))
+  (org-todo                      (:inherit 'fixed-pitch :underline (:color ot09 :line-width -1)))
   (org-upcoming-deadline         (:foreground ha00))
   (org-upcoming-distant-deadline (:foreground ha00))
   (org-verbatim                  (:foreground cs02 :background ot06))
@@ -446,14 +443,14 @@
   (org-agenda-date-today       (:foreground ha00))
   (org-agenda-date-weekend     (:foreground ha00))
   (org-agenda-diary            (:foreground ha00))
-  (org-agenda-dimmed-todo-face (:foreground ha00))
+  (org-agenda-dimmed-todo-face (:foreground ha00 :underline (:color ha01 :line-width -1)))
   (org-agenda-done             (:foreground ha00))
   (org-agenda-filter-category  (:foreground ha00))
   (org-agenda-filter-effort    (:foreground ha00))
   (org-agenda-filter-regexp    (:foreground ha00))
   (org-agenda-filter-tags      (:foreground ha00))
   (org-agenda-restriction-lock (:foreground ha00))
-  (org-agenda-structure        (:foreground ha00))
+  (org-agenda-structure        (:inherit 'variable-pitch :foreground ha00 :height 1.2))
 
 ;;;;;;; block
   (org-block            (:foreground fg   :background ha09 :extend t))
@@ -557,7 +554,12 @@
   (magit-log-graph              (:foreground ot00))
   (magit-tag                    (:foreground ha04 :underline t :inherit 'variable-pitch))
   (magit-popup-disabled-argument(:foreground ot11))
-  ))
+
+;;;;;; orderless
+  (orderless-match-face-0 (:inherit 'head-outline-2 :weight 'bold))
+  (orderless-match-face-1 (:inherit 'head-outline-4 :weight 'bold))
+  (orderless-match-face-2 (:inherit 'head-outline-5 :weight 'bold))
+  (orderless-match-face-3 (:inherit 'head-outline-3 :weight 'bold))))
 
 ;;;###autoload
 (and load-file-name
