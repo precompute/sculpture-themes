@@ -1,17 +1,17 @@
 ;;; sculpture-theme.el --- Dark theme with vivid colors -*- lexical-binding: t; -*-
-;;
+
 ;; Copyright (C) 2021 t-e-r-m
-;;
+
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 07, 2021
 ;; Version: 0.2.0
 ;; Package-Requires: ((emacs "26.1")(autothemer "0.2"))
-;;
+
 ;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
-;;
+
 ;; Copyright (C) 2021 t-e-r-m
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -28,14 +28,14 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
+
 ;; This theme takes inspiration from the pigments found on
 ;; now bare Greco-Roman statues.
-;;
+
 ;; Monospace fonts are boring -- they make my eyes sore.
-;;
+
 ;; The dark version prizes colors over readability.
-;;
+
 ;;; Code:
 
 (require 'autothemer)
@@ -48,28 +48,28 @@
   "Group for sculpture-theme"
   :group 'faces)
 
-(defface head-outline-1        nil nil)
-(defface head-outline-2        nil nil)
-(defface head-outline-3        nil nil)
-(defface head-outline-4        nil nil)
-(defface head-outline-5        nil nil)
-(defface head-outline-6        nil nil)
-(defface head-outline-7        nil nil)
-(defface head-outline-8        nil nil)
-(defface modeline-percent      nil nil)
-(defface modeline-line         nil nil)
-(defface modeline-mode         nil nil)
-(defface modeline-workspace    nil nil)
-(defface variable-pitch-italic nil nil)
-(defface elfeed-title-1        nil nil)
-(defface elfeed-title-2        nil nil)
-(defface elfeed-title-3        nil nil)
-(defface elfeed-title-4        nil nil)
-(defface elfeed-title-5        nil nil)
-(defface elfeed-title-6        nil nil)
-(defface elfeed-title-7        nil nil)
-(defface elfeed-title-8        nil nil)
-(defface elfeed-star-face      nil nil)
+(defface sculpture-theme-head-outline-1        nil nil)
+(defface sculpture-theme-head-outline-2        nil nil)
+(defface sculpture-theme-head-outline-3        nil nil)
+(defface sculpture-theme-head-outline-4        nil nil)
+(defface sculpture-theme-head-outline-5        nil nil)
+(defface sculpture-theme-head-outline-6        nil nil)
+(defface sculpture-theme-head-outline-7        nil nil)
+(defface sculpture-theme-head-outline-8        nil nil)
+(defface sculpture-theme-modeline-percent      nil nil)
+(defface sculpture-theme-modeline-line         nil nil)
+(defface sculpture-theme-modeline-mode         nil nil)
+(defface sculpture-theme-modeline-workspace    nil nil)
+(defface sculpture-theme-variable-pitch-italic nil nil)
+(defface sculpture-theme-elfeed-title-1        nil nil)
+(defface sculpture-theme-elfeed-title-2        nil nil)
+(defface sculpture-theme-elfeed-title-3        nil nil)
+(defface sculpture-theme-elfeed-title-4        nil nil)
+(defface sculpture-theme-elfeed-title-5        nil nil)
+(defface sculpture-theme-elfeed-title-6        nil nil)
+(defface sculpture-theme-elfeed-title-7        nil nil)
+(defface sculpture-theme-elfeed-title-8        nil nil)
+(defface sculpture-theme-elfeed-star-face      nil nil)
 
 (autothemer-deftheme
  sculpture "Sculpture theme"
@@ -135,7 +135,7 @@
   (italic                     (:slant 'italic))
   (underline                  (:underline t))
   (variable-pitch             (:height 1.0))
-  (variable-pitch-italic      (:inherit 'variable-pitch :slant 'italic))
+  (sculpture-theme-variable-pitch-italic      (:inherit 'variable-pitch :slant 'italic))
   (fringe                     (:background bg))
   (vertical-border            (:foreground bw03))
   (window-divider             (:foreground bw01))
@@ -187,10 +187,10 @@
   (mode-line-inactive         (:foreground bw08 :background bw00 :box (:line-width 1 :color bw00)))
 
 ;;;;;;; custom
-  (modeline-line                     (:inherit '(cursor variable-pitch) :foreground bg))
-  (modeline-percent                  (:inherit '(cursor variable-pitch) :foreground fg :background ot03))
-  (modeline-mode                     (:inherit 'variable-pitch :foreground ot05 :weight 'bold))
-  (modeline-workspace                (:inherit 'variable-pitch :foreground cs02))
+  (sculptur-theme-modeline-line                     (:inherit '(cursor variable-pitch) :foreground bg))
+  (sculptur-theme-modeline-percent                  (:inherit '(cursor variable-pitch) :foreground fg :background ot03))
+  (sculptur-theme-modeline-mode                     (:inherit 'variable-pitch :foreground ot05 :weight 'bold))
+  (sculptur-theme-modeline-workspace                (:inherit 'variable-pitch :foreground cs02))
   (doom-modeline-highlight           (:inherit 'variable-pitch :foreground ot04 :weight 'bold))
   (doom-modeline-alternate-highlight (:inherit 'variable-pitch :foreground cs02))
 
@@ -279,15 +279,15 @@
   (ivy-yanked-word                 (:foreground ot07))
 
 ;;;;;; Swiper
-  (swiper-background-match-face-1  (:inherit 'head-outline-2))
-  (swiper-background-match-face-2  (:inherit 'head-outline-4))
-  (swiper-background-match-face-3  (:inherit 'head-outline-5))
-  (swiper-background-match-face-4  (:inherit 'head-outline-3))
+  (swiper-background-match-face-1  (:inherit 'sculpture-theme-head-outline-2))
+  (swiper-background-match-face-2  (:inherit 'sculpture-theme-head-outline-4))
+  (swiper-background-match-face-3  (:inherit 'sculpture-theme-head-outline-5))
+  (swiper-background-match-face-4  (:inherit 'sculpture-theme-head-outline-3))
   (swiper-line-face                (:underline ha04 :extend t))
-  (swiper-match-face-1             (:inherit 'head-outline-2 :weight 'bold))
-  (swiper-match-face-2             (:inherit 'head-outline-4 :weight 'bold))
-  (swiper-match-face-3             (:inherit 'head-outline-5 :weight 'bold))
-  (swiper-match-face-4             (:inherit 'head-outline-3 :weight 'bold))
+  (swiper-match-face-1             (:inherit 'sculpture-theme-head-outline-2 :weight 'bold))
+  (swiper-match-face-2             (:inherit 'sculpture-theme-head-outline-4 :weight 'bold))
+  (swiper-match-face-3             (:inherit 'sculpture-theme-head-outline-5 :weight 'bold))
+  (swiper-match-face-4             (:inherit 'sculpture-theme-head-outline-3 :weight 'bold))
 
 ;;;;;; rainbow-delimiter
   (rainbow-delimiters-base-face       (:foreground cs01))
@@ -345,25 +345,25 @@
   (imenu-list-entry-subalist-face-1 (:foreground ot12 :underline t))
   (imenu-list-entry-subalist-face-0 (:foreground ot04 :underline t))
 
-;;;;;; Head-Outline
-  (head-outline-1 (:foreground ha04))
-  (head-outline-2 (:foreground ot05))
-  (head-outline-3 (:foreground ot04))
-  (head-outline-4 (:foreground cs02))
-  (head-outline-5 (:foreground ha00))
-  (head-outline-6 (:foreground ot10))
-  (head-outline-7 (:foreground ha06))
-  (head-outline-8 (:foreground ot07))
+;;;;;; Sculpture-Theme-Head-Outline
+  (sculpture-theme-head-outline-1 (:foreground ha04))
+  (sculpture-theme-head-outline-2 (:foreground ot05))
+  (sculpture-theme-head-outline-3 (:foreground ot04))
+  (sculpture-theme-head-outline-4 (:foreground cs02))
+  (sculpture-theme-head-outline-5 (:foreground ha00))
+  (sculpture-theme-head-outline-6 (:foreground ot10))
+  (sculpture-theme-head-outline-7 (:foreground ha06))
+  (sculpture-theme-head-outline-8 (:foreground ot07))
 
 ;;;;;; Outline
-  (outline-1 (:inherit '(head-outline-1 variable-pitch) :overline t))
-  (outline-2 (:inherit '(head-outline-2 variable-pitch) :overline t))
-  (outline-3 (:inherit '(head-outline-3 variable-pitch) :overline t))
-  (outline-4 (:inherit '(head-outline-4 variable-pitch) :overline t))
-  (outline-5 (:inherit '(head-outline-5 variable-pitch) :overline t))
-  (outline-6 (:inherit '(head-outline-6 variable-pitch) :overline t))
-  (outline-7 (:inherit '(head-outline-7 variable-pitch) :overline t))
-  (outline-8 (:inherit '(head-outline-8 variable-pitch) :overline t))
+  (outline-1 (:inherit '(sculpture-theme-head-outline-1 variable-pitch) :overline t))
+  (outline-2 (:inherit '(sculpture-theme-head-outline-2 variable-pitch) :overline t))
+  (outline-3 (:inherit '(sculpture-theme-head-outline-3 variable-pitch) :overline t))
+  (outline-4 (:inherit '(sculpture-theme-head-outline-4 variable-pitch) :overline t))
+  (outline-5 (:inherit '(sculpture-theme-head-outline-5 variable-pitch) :overline t))
+  (outline-6 (:inherit '(sculpture-theme-head-outline-6 variable-pitch) :overline t))
+  (outline-7 (:inherit '(sculpture-theme-head-outline-7 variable-pitch) :overline t))
+  (outline-8 (:inherit '(sculpture-theme-head-outline-8 variable-pitch) :overline t))
   (outline-minor-0 (:background bg))
   (outline-minor-1 (:inherit 'outline-1 :extend t))
   (outline-minor-2 (:inherit 'outline-2 :extend t))
@@ -375,12 +375,12 @@
   (outline-minor-8 (:inherit 'outline-8 :extend t))
 
 ;;;;;; markdown
-  (markdown-header-face-1 (:inherit 'head-outline-1))
-  (markdown-header-face-2 (:inherit 'head-outline-2))
-  (markdown-header-face-3 (:inherit 'head-outline-3))
-  (markdown-header-face-4 (:inherit 'head-outline-4))
-  (markdown-header-face-5 (:inherit 'head-outline-5))
-  (markdown-header-face-6 (:inherit 'head-outline-6))
+  (markdown-header-face-1 (:inherit 'sculpture-theme-head-outline-1))
+  (markdown-header-face-2 (:inherit 'sculpture-theme-head-outline-2))
+  (markdown-header-face-3 (:inherit 'sculpture-theme-head-outline-3))
+  (markdown-header-face-4 (:inherit 'sculpture-theme-head-outline-4))
+  (markdown-header-face-5 (:inherit 'sculpture-theme-head-outline-5))
+  (markdown-header-face-6 (:inherit 'sculpture-theme-head-outline-6))
   (markdown-link-face (:inherit 'org-link))
 
 ;;;;;; org
@@ -463,14 +463,14 @@
   (org-checkbox-statistics-todo (:foreground cs02))
 
 ;;;;;;; level
-  (org-level-1 (:inherit 'head-outline-1))
-  (org-level-2 (:inherit 'head-outline-2))
-  (org-level-3 (:inherit 'head-outline-3))
-  (org-level-4 (:inherit 'head-outline-4))
-  (org-level-5 (:inherit 'head-outline-5))
-  (org-level-6 (:inherit 'head-outline-6))
-  (org-level-7 (:inherit 'head-outline-7))
-  (org-level-8 (:inherit 'head-outline-8))
+  (org-level-1 (:inherit 'sculpture-theme-head-outline-1))
+  (org-level-2 (:inherit 'sculpture-theme-head-outline-2))
+  (org-level-3 (:inherit 'sculpture-theme-head-outline-3))
+  (org-level-4 (:inherit 'sculpture-theme-head-outline-4))
+  (org-level-5 (:inherit 'sculpture-theme-head-outline-5))
+  (org-level-6 (:inherit 'sculpture-theme-head-outline-6))
+  (org-level-7 (:inherit 'sculpture-theme-head-outline-7))
+  (org-level-8 (:inherit 'sculpture-theme-head-outline-8))
 
 ;;;;;; shr
   (shr-link (:inherit 'org-link))
@@ -519,15 +519,16 @@
   (elfeed-search-last-update-face  (:foreground fg :background ha06 :inherit 'variable-pitch))
   (elfeed-search-unread-count-face (:foreground fg :background ot09 :inherit 'variable-pitch))
   (elfeed-search-unread-title-face (:weight 'semibold))
-  (elfeed-title-1 (:inherit 'head-outline-1))
-  (elfeed-title-2 (:inherit 'head-outline-2))
-  (elfeed-title-3 (:inherit 'head-outline-3))
-  (elfeed-title-4 (:inherit 'head-outline-4))
-  (elfeed-title-5 (:inherit 'head-outline-5))
-  (elfeed-title-6 (:inherit 'head-outline-6))
-  (elfeed-title-7 (:inherit 'head-outline-7))
-  (elfeed-title-8 (:inherit 'head-outline-8))
-  (elfeed-star-face (:underline (:color ha04 :line-width -1)))
+
+  (sculpture-theme-elfeed-title-1   (:inherit 'sculpture-theme-head-outline-1))
+  (sculpture-theme-elfeed-title-2   (:inherit 'sculpture-theme-head-outline-2))
+  (sculpture-theme-elfeed-title-3   (:inherit 'sculpture-theme-head-outline-3))
+  (sculpture-theme-elfeed-title-4   (:inherit 'sculpture-theme-head-outline-4))
+  (sculpture-theme-elfeed-title-5   (:inherit 'sculpture-theme-head-outline-5))
+  (sculpture-theme-elfeed-title-6   (:inherit 'sculpture-theme-head-outline-6))
+  (sculpture-theme-elfeed-title-7   (:inherit 'sculpture-theme-head-outline-7))
+  (sculpture-theme-elfeed-title-8   (:inherit 'sculpture-theme-head-outline-8))
+  (sculpture-theme-elfeed-star-face (:underline (:color ha04 :line-width -1)))
 
 ;;;;;; transient
   (transient-unreachable       (:foreground bw04))
@@ -555,10 +556,10 @@
   (magit-popup-disabled-argument(:foreground bw04))
 
 ;;;;;; orderless
-  (orderless-match-face-0 (:inherit 'head-outline-2 :weight 'bold))
-  (orderless-match-face-1 (:inherit 'head-outline-4 :weight 'bold))
-  (orderless-match-face-2 (:inherit 'head-outline-5 :weight 'bold))
-  (orderless-match-face-3 (:inherit 'head-outline-3 :weight 'bold))
+  (orderless-match-face-0 (:inherit 'sculpture-theme-head-outline-2 :weight 'bold))
+  (orderless-match-face-1 (:inherit 'sculpture-theme-head-outline-4 :weight 'bold))
+  (orderless-match-face-2 (:inherit 'sculpture-theme-head-outline-5 :weight 'bold))
+  (orderless-match-face-3 (:inherit 'sculpture-theme-head-outline-3 :weight 'bold))
 
 ;;;;;; ediff
   (ediff-odd-diff-Ancestor (:background ot06))

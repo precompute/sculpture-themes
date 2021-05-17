@@ -1,17 +1,17 @@
 ;;; sculpture-light-theme.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
-;;
+
 ;; Copyright (C) 2021 t-e-r-m
-;;
+
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 07, 2021
 ;; Version: 0.2.0
 ;; Package-Requires: ((emacs "26.1")(autothemer "0.2"))
-;;
+
 ;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
-;;
+
 ;; Copyright (C) 2021 t-e-r-m
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -28,14 +28,14 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
+
 ;; This theme takes inspiration from the pigments found on
 ;; now bare Greco-Roman statues.
-;;
+
 ;; Monospace fonts are boring -- they make my eyes sore.
-;;
+
 ;; The light version prizes readability over colors.
-;;
+
 ;;; Code:
 
 (require 'autothemer)
