@@ -187,10 +187,10 @@
   (mode-line-inactive         (:foreground bw08 :background bw00 :box (:line-width 1 :color bw00)))
 
 ;;;;;;; custom
-  (sculptur-theme-modeline-line                     (:inherit '(cursor variable-pitch) :foreground bg))
-  (sculptur-theme-modeline-percent                  (:inherit '(cursor variable-pitch) :foreground fg :background ot03))
-  (sculptur-theme-modeline-mode                     (:inherit 'variable-pitch :foreground ot05 :weight 'bold))
-  (sculptur-theme-modeline-workspace                (:inherit 'variable-pitch :foreground cs02))
+  (sculpture-theme-modeline-line                     (:inherit '(cursor variable-pitch) :foreground bg))
+  (sculpture-theme-modeline-percent                  (:inherit '(cursor variable-pitch) :foreground fg :background ot03))
+  (sculpture-theme-modeline-mode                     (:inherit 'variable-pitch :foreground ot05 :weight 'bold))
+  (sculpture-theme-modeline-workspace                (:inherit 'variable-pitch :foreground cs02))
   (doom-modeline-highlight           (:inherit 'variable-pitch :foreground ot04 :weight 'bold))
   (doom-modeline-alternate-highlight (:inherit 'variable-pitch :foreground cs02))
 
