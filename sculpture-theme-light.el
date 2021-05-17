@@ -569,6 +569,6 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'sculpture-theme-light)
+(provide-theme 'sculpture-light)
 
 ;;; sculpture-theme-light.el ends here
