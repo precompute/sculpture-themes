@@ -7,6 +7,7 @@
 ;; Created: January 06, 2021
 ;; Modified: May 07, 2021
 ;; Version: 0.2.0
+;; Package-Requires: ((emacs "26.1"))
 
 ;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
@@ -138,7 +139,7 @@
    `(window-divider-first-pixel ((,class (:foreground ,bw02))))
    `(window-divider-last-pixel  ((,class (:foreground ,bw02))))
    `(hl-line                    ((,class (:background ,ot06))))
-   `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width -1 :color)) ,bw06)))
+   `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width -1 :color ,bw06)))))
 
    `(default              ((,class (:foreground ,fg :background ,bg))))
    `(error                ((,class (:foreground ,cs00))))
@@ -176,11 +177,11 @@
 ;;;;;; Header line and mode line
    `(header-line                ((,class (:foreground ,fg   :background ,bw00))))
    `(header-line-highlight      ((,class (:foreground ,fg   :background ,bw00))))
-   `(mode-line                  ((,class (:foreground ,cs01 :background ,bw00 :box (:line-width 1 :color)) ,bw04)))
+   `(mode-line                  ((,class (:foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,bw04)))))
    `(mode-line-buffer-id        ((,class (:foreground ,ot05 :background ,bw00))))
    `(mode-line-emphasis         ((,class (:foreground ,ha05 :background ,bw00))))
    `(mode-line-highlight        ((,class (:foreground ,ha05 :background ,bw00))))
-   `(mode-line-inactive         ((,class (:foreground ,bw08 :background ,bw00 :box (:line-width 1 :color)) ,bw00)))
+   `(mode-line-inactive         ((,class (:foreground ,bw08 :background ,bw00 :box (:line-width 1 :color ,bw00)))))
 
 ;;;;;;; custom
    `(sculpture-theme-modeline-line                     ((,class (:inherit (cursor variable-pitch) :foreground ,bg))))
