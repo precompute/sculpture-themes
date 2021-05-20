@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 07, 2021
-;; Version: 0.2.0
+;; Modified: May 20, 2021
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "26.1"))
 
 ;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
