@@ -1,4 +1,4 @@
-;;; sculpture-theme.el --- Theme with vivid colors -*- lexical-binding: t; -*-
+;;; sculpture-themes.el --- Themes with vivid colors -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 t-e-r-m
 
@@ -36,14 +36,14 @@
 
 ;;; Code:
 
-(defgroup sculpture-theme-dark ()
+(defgroup sculpture-themes-dark ()
   "Group for sculpture-theme-dark."
-  :group 'sculpture-faces)
+  :group 'sculpture-themes-dark-faces)
 
 
-(defgroup sculpture-theme-light ()
+(defgroup sculpture-themes-light ()
   "Group for sculpture-theme-light"
-  :group 'sculpture-light-faces)
+  :group 'sculpture-themes-light-faces)
 
 ;;;###autoload
 (add-to-list
@@ -53,4 +53,4 @@
 
 (provide 'sculpture-themes)
 
-;;; sculpture-theme.el ends here
+;;; sculpture-themes.el ends here

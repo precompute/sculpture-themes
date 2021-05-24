@@ -1,4 +1,4 @@
-;;; sculpture-theme-dark.el --- Dark theme with vivid colors -*- lexical-binding: t; -*-
+;;; sculpture-themes-dark-theme.el --- Dark theme with vivid colors -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 t-e-r-m
 
@@ -64,7 +64,7 @@
 (defface sculpture-theme-dark-elfeed-star-face      nil nil)
 
 ;;;; definition
-(deftheme sculpture-dark
+(deftheme sculpture-themes-dark
   "This theme takes inspiration from the pigments found on now bare Greco-Roman statues.")
 
 (let ((class '((class color)))
@@ -121,7 +121,7 @@
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
-   'sculpture-dark
+   'sculpture-themes-dark
    `(bold                       ((,class (:weight bold))))
    `(bold-italic                ((,class (:weight bold :slant italic))))
    `(fixed-pitch                ((,class (:height 1.0))))
@@ -565,7 +565,6 @@
    `(ediff-even-diff-B ((,class (:background ,ot06))))
    `(ediff-even-diff-A ((,class (:background ,ot06))))))
 
-(provide-theme 'sculpture-dark)
-;; (provide 'sculpture-theme-dark)
+(provide-theme 'sculpture-themes-dark)
 
-;;; sculpture-theme-dark.el ends here
+;;; sculpture-themes-dark-theme.el ends here

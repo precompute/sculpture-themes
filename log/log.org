@@ -231,3 +231,221 @@ make: *** [Makefile:5: run] Error 2
 make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 #+end_src
+* e56a66
+[21-05-24 10:11:55]
+#+begin_src
+
+### sculpture-theme-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+```
+sculpture-theme-dark-theme.el:40:1:Error: Loading file /workspace/pkg/sculpture-themes.el failed to provide feature `sculpture-themes'
+```
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-theme-dark-theme.el:571: The footer should be: (provide 'sculpture-theme-dark-theme)\n;;; sculpture-theme-dark-theme.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+67:0: error: "sculpture-dark" doesn't start with package's prefix "sculpture-theme-dark".
+```
+
+
+### sculpture-theme-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+```
+sculpture-theme-light-theme.el:40:1:Error: Loading file /workspace/pkg/sculpture-themes.el failed to provide feature `sculpture-themes'
+```
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-theme-light-theme.el:567: The footer should be: (provide 'sculpture-theme-light-theme)\n;;; sculpture-theme-light-theme.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+72:0: error: "sculpture-light" doesn't start with package's prefix "sculpture-theme-light".
+```
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-themes.el:56: The footer should be: (provide 'sculpture-themes)\n;;; sculpture-themes.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+1:0: error: There is no (provide-theme 'sculpture) form.
+```
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-theme-dark-theme.el
+sculpture-theme-dark-theme.el:Error: Emacs 27.1 errored during load
+Loading sculpture-theme-light-theme.el
+sculpture-theme-light-theme.el:Error: Emacs 27.1 errored during load
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- No .el file matches the name 'shx'
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-theme-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-theme-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Theme with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+
+#+end_src
+
+* 894c3ca
+[21-05-24 10:22:45]
+#+begin_src
+
+### sculpture-theme-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+```
+sculpture-theme-dark-theme.el:43:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-1' fails to specify containing group
+sculpture-theme-dark-theme.el:44:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-2' fails to specify containing group
+sculpture-theme-dark-theme.el:45:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-3' fails to specify containing group
+sculpture-theme-dark-theme.el:46:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-4' fails to specify containing group
+sculpture-theme-dark-theme.el:47:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-5' fails to specify containing group
+sculpture-theme-dark-theme.el:48:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-6' fails to specify containing group
+sculpture-theme-dark-theme.el:49:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-7' fails to specify containing group
+sculpture-theme-dark-theme.el:50:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-8' fails to specify containing group
+sculpture-theme-dark-theme.el:51:1:Warning: defface for
+    `sculpture-theme-dark-modeline-percent' fails to specify containing group
+sculpture-theme-dark-theme.el:52:1:Warning: defface for
+    `sculpture-theme-dark-modeline-line' fails to specify containing group
+sculpture-theme-dark-theme.el:53:1:Warning: defface for
+    `sculpture-theme-dark-modeline-mode' fails to specify containing group
+sculpture-theme-dark-theme.el:54:1:Warning: defface for
+    `sculpture-theme-dark-modeline-workspace' fails to specify containing
+    group
+sculpture-theme-dark-theme.el:55:1:Warning: defface for
+    `sculpture-theme-dark-variable-pitch-italic' fails to specify containing
+    group
+sculpture-theme-dark-theme.el:56:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-1' fails to specify containing group
+sculpture-theme-dark-theme.el:57:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-2' fails to specify containing group
+sculpture-theme-dark-theme.el:58:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-3' fails to specify containing group
+sculpture-theme-dark-theme.el:59:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-4' fails to specify containing group
+sculpture-theme-dark-theme.el:60:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-5' fails to specify containing group
+sculpture-theme-dark-theme.el:61:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-6' fails to specify containing group
+sculpture-theme-dark-theme.el:62:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-7' fails to specify containing group
+sculpture-theme-dark-theme.el:63:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-8' fails to specify containing group
+sculpture-theme-dark-theme.el:64:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-star-face' fails to specify containing group
+```
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-theme-dark-theme.el:571: The footer should be: (provide 'sculpture-theme-dark-theme)\n;;; sculpture-theme-dark-theme.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+67:0: error: "sculpture-dark" doesn't start with package's prefix "sculpture-theme-dark".
+```
+
+
+### sculpture-theme-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-theme-light-theme.el:567: The footer should be: (provide 'sculpture-theme-light-theme)\n;;; sculpture-theme-light-theme.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+72:0: error: "sculpture-light" doesn't start with package's prefix "sculpture-theme-light".
+```
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+```
+Warning (emacs):
+sculpture-themes.el:56: The footer should be: (provide 'sculpture-themes)\n;;; sculpture-themes.el ends here
+```
+
+package-lint (using version 20210511.2055):
+```
+3 issues found:
+1:0: error: There is no (provide-theme 'sculpture) form.
+39:0: error: "sculpture-theme-dark" doesn't start with package's prefix "sculpture-themes".
+44:0: error: "sculpture-theme-light" doesn't start with package's prefix "sculpture-themes".
+```
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-theme-dark-theme.el
+Loading sculpture-theme-light-theme.el
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- No .el file matches the name 'shx'
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-theme-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-theme-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Theme with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+
+#+end_src

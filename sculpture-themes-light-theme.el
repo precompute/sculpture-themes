@@ -1,4 +1,4 @@
-;;; sculpture-theme-light.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
+;;; sculpture-themes-light-theme.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 t-e-r-m
 
@@ -40,9 +40,9 @@
 (require 'sculpture-themes)
 
 ;;;; Custom Faces
-(defgroup sculpture-theme-light ()
-  "Group for sculpture-theme-light"
-  :group 'sculpture-light-faces)
+;; (defgroup sculpture-themes-light ()
+;;   "Group for sculpture-theme-light"
+;;   :group 'sculpture-light-faces)
 
 (defface sculpture-theme-light-head-outline-1        nil nil)
 (defface sculpture-theme-light-head-outline-2        nil nil)
@@ -69,7 +69,7 @@
 
 
 ;;;; definition
-(deftheme sculpture-light
+(deftheme sculpture-themes-light
   "this theme takes inspiration from the pigments found on now bare greco-roman statues.")
 
 (let ((class '((class color)))
@@ -127,7 +127,7 @@
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
-   'sculpture-light
+   'sculpture-themes-light
    `(bold                       ((,class (:weight bold))))
    `(bold-italic                ((,class (:weight bold :slant italic))))
    `(fixed-pitch                ((,class (:height 1.0))))
@@ -561,7 +561,6 @@
    `(orderless-match-face-2 ((,class (:inherit sculpture-theme-light-head-outline-5 :weight bold))))
    `(orderless-match-face-3 ((,class (:inherit sculpture-theme-light-head-outline-3 :weight bold))))))
 
-(provide-theme 'sculpture-light)
-;; (provide 'sculpture-theme-light)
+(provide-theme 'sculpture-themes-light)
 
-;;; sculpture-theme-light.el ends here
+;;; sculpture-themes-light-theme.el ends here
