@@ -669,3 +669,117 @@ make: *** [Makefile:5: run] Error 2
 make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 #+end_src
+
+* ac0965f
+[21-05-24 11:35:45]
+#+begin_src
+
+### sculpture-themes-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+24 issues found:
+1:0: error: There is no `provide' form.
+10:0: error: Package-Requires outside the main file have no effect.
+43:0: error: "sculpture-theme-dark-head-outline-1" doesn't start with package's prefix "sculpture-themes".
+44:0: error: "sculpture-theme-dark-head-outline-2" doesn't start with package's prefix "sculpture-themes".
+45:0: error: "sculpture-theme-dark-head-outline-3" doesn't start with package's prefix "sculpture-themes".
+46:0: error: "sculpture-theme-dark-head-outline-4" doesn't start with package's prefix "sculpture-themes".
+47:0: error: "sculpture-theme-dark-head-outline-5" doesn't start with package's prefix "sculpture-themes".
+48:0: error: "sculpture-theme-dark-head-outline-6" doesn't start with package's prefix "sculpture-themes".
+49:0: error: "sculpture-theme-dark-head-outline-7" doesn't start with package's prefix "sculpture-themes".
+50:0: error: "sculpture-theme-dark-head-outline-8" doesn't start with package's prefix "sculpture-themes".
+51:0: error: "sculpture-theme-dark-modeline-percent" doesn't start with package's prefix "sculpture-themes".
+52:0: error: "sculpture-theme-dark-modeline-line" doesn't start with package's prefix "sculpture-themes".
+53:0: error: "sculpture-theme-dark-modeline-mode" doesn't start with package's prefix "sculpture-themes".
+54:0: error: "sculpture-theme-dark-modeline-workspace" doesn't start with package's prefix "sculpture-themes".
+55:0: error: "sculpture-theme-dark-variable-pitch-italic" doesn't start with package's prefix "sculpture-themes".
+56:0: error: "sculpture-theme-dark-elfeed-title-1" doesn't start with package's prefix "sculpture-themes".
+57:0: error: "sculpture-theme-dark-elfeed-title-2" doesn't start with package's prefix "sculpture-themes".
+58:0: error: "sculpture-theme-dark-elfeed-title-3" doesn't start with package's prefix "sculpture-themes".
+59:0: error: "sculpture-theme-dark-elfeed-title-4" doesn't start with package's prefix "sculpture-themes".
+60:0: error: "sculpture-theme-dark-elfeed-title-5" doesn't start with package's prefix "sculpture-themes".
+61:0: error: "sculpture-theme-dark-elfeed-title-6" doesn't start with package's prefix "sculpture-themes".
+62:0: error: "sculpture-theme-dark-elfeed-title-7" doesn't start with package's prefix "sculpture-themes".
+63:0: error: "sculpture-theme-dark-elfeed-title-8" doesn't start with package's prefix "sculpture-themes".
+64:0: error: "sculpture-theme-dark-elfeed-star-face" doesn't start with package's prefix "sculpture-themes".
+```
+
+
+### sculpture-themes-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+24 issues found:
+1:0: error: There is no `provide' form.
+10:0: error: Package-Requires outside the main file have no effect.
+47:0: error: "sculpture-theme-light-head-outline-1" doesn't start with package's prefix "sculpture-themes".
+48:0: error: "sculpture-theme-light-head-outline-2" doesn't start with package's prefix "sculpture-themes".
+49:0: error: "sculpture-theme-light-head-outline-3" doesn't start with package's prefix "sculpture-themes".
+50:0: error: "sculpture-theme-light-head-outline-4" doesn't start with package's prefix "sculpture-themes".
+51:0: error: "sculpture-theme-light-head-outline-5" doesn't start with package's prefix "sculpture-themes".
+52:0: error: "sculpture-theme-light-head-outline-6" doesn't start with package's prefix "sculpture-themes".
+53:0: error: "sculpture-theme-light-head-outline-7" doesn't start with package's prefix "sculpture-themes".
+54:0: error: "sculpture-theme-light-head-outline-8" doesn't start with package's prefix "sculpture-themes".
+55:0: error: "sculpture-theme-light-modeline-percent" doesn't start with package's prefix "sculpture-themes".
+56:0: error: "sculpture-theme-light-modeline-line" doesn't start with package's prefix "sculpture-themes".
+57:0: error: "sculpture-theme-light-modeline-mode" doesn't start with package's prefix "sculpture-themes".
+58:0: error: "sculpture-theme-light-modeline-workspace" doesn't start with package's prefix "sculpture-themes".
+59:0: error: "sculpture-theme-light-variable-pitch-italic" doesn't start with package's prefix "sculpture-themes".
+60:0: error: "sculpture-theme-light-elfeed-title-1" doesn't start with package's prefix "sculpture-themes".
+61:0: error: "sculpture-theme-light-elfeed-title-2" doesn't start with package's prefix "sculpture-themes".
+62:0: error: "sculpture-theme-light-elfeed-title-3" doesn't start with package's prefix "sculpture-themes".
+63:0: error: "sculpture-theme-light-elfeed-title-4" doesn't start with package's prefix "sculpture-themes".
+64:0: error: "sculpture-theme-light-elfeed-title-5" doesn't start with package's prefix "sculpture-themes".
+65:0: error: "sculpture-theme-light-elfeed-title-6" doesn't start with package's prefix "sculpture-themes".
+66:0: error: "sculpture-theme-light-elfeed-title-7" doesn't start with package's prefix "sculpture-themes".
+67:0: error: "sculpture-theme-light-elfeed-title-8" doesn't start with package's prefix "sculpture-themes".
+68:0: error: "sculpture-theme-light-elfeed-star-face" doesn't start with package's prefix "sculpture-themes".
+```
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-themes-dark-theme.el
+Loading sculpture-themes-light-theme.el
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-themes-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-themes-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Themes with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+#+end_src
