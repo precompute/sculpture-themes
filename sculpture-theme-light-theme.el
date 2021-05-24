@@ -37,7 +37,7 @@
 ;; The light version prizes readability over colors.
 
 ;;; Code:
-(require 'sculpture-theme)
+(require 'sculpture-themes)
 
 ;;;; Custom Faces
 (defgroup sculpture-theme-light ()

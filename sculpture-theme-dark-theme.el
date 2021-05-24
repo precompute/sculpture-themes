@@ -37,7 +37,7 @@
 ;; The dark version prizes colors over readability.
 
 ;;; Code:
-(require 'sculpture-theme)
+(require 'sculpture-themes)
 
 ;;;; Custom Faces
 (defface sculpture-theme-dark-head-outline-1        nil nil)
