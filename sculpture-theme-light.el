@@ -1,4 +1,4 @@
-;;; sculpture-light-theme.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
+;;; sculpture-theme-light.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 t-e-r-m
 
@@ -39,32 +39,32 @@
 ;;; Code:
 
 ;;;; Custom Faces
-(defgroup sculpture-light-theme ()
-  "Group for sculpture-light-theme"
+(defgroup sculpture-theme-light ()
+  "Group for sculpture-theme-light"
   :group 'sculpture-light-faces)
 
-(defface sculpture-light-theme-head-outline-1        nil nil)
-(defface sculpture-light-theme-head-outline-2        nil nil)
-(defface sculpture-light-theme-head-outline-3        nil nil)
-(defface sculpture-light-theme-head-outline-4        nil nil)
-(defface sculpture-light-theme-head-outline-5        nil nil)
-(defface sculpture-light-theme-head-outline-6        nil nil)
-(defface sculpture-light-theme-head-outline-7        nil nil)
-(defface sculpture-light-theme-head-outline-8        nil nil)
-(defface sculpture-light-theme-modeline-percent      nil nil)
-(defface sculpture-light-theme-modeline-line         nil nil)
-(defface sculpture-light-theme-modeline-mode         nil nil)
-(defface sculpture-light-theme-modeline-workspace    nil nil)
-(defface sculpture-light-theme-variable-pitch-italic nil nil)
-(defface sculpture-light-theme-elfeed-title-1        nil nil)
-(defface sculpture-light-theme-elfeed-title-2        nil nil)
-(defface sculpture-light-theme-elfeed-title-3        nil nil)
-(defface sculpture-light-theme-elfeed-title-4        nil nil)
-(defface sculpture-light-theme-elfeed-title-5        nil nil)
-(defface sculpture-light-theme-elfeed-title-6        nil nil)
-(defface sculpture-light-theme-elfeed-title-7        nil nil)
-(defface sculpture-light-theme-elfeed-title-8        nil nil)
-(defface sculpture-light-theme-elfeed-star-face      nil nil)
+(defface sculpture-theme-light-head-outline-1        nil nil)
+(defface sculpture-theme-light-head-outline-2        nil nil)
+(defface sculpture-theme-light-head-outline-3        nil nil)
+(defface sculpture-theme-light-head-outline-4        nil nil)
+(defface sculpture-theme-light-head-outline-5        nil nil)
+(defface sculpture-theme-light-head-outline-6        nil nil)
+(defface sculpture-theme-light-head-outline-7        nil nil)
+(defface sculpture-theme-light-head-outline-8        nil nil)
+(defface sculpture-theme-light-modeline-percent      nil nil)
+(defface sculpture-theme-light-modeline-line         nil nil)
+(defface sculpture-theme-light-modeline-mode         nil nil)
+(defface sculpture-theme-light-modeline-workspace    nil nil)
+(defface sculpture-theme-light-variable-pitch-italic nil nil)
+(defface sculpture-theme-light-elfeed-title-1        nil nil)
+(defface sculpture-theme-light-elfeed-title-2        nil nil)
+(defface sculpture-theme-light-elfeed-title-3        nil nil)
+(defface sculpture-theme-light-elfeed-title-4        nil nil)
+(defface sculpture-theme-light-elfeed-title-5        nil nil)
+(defface sculpture-theme-light-elfeed-title-6        nil nil)
+(defface sculpture-theme-light-elfeed-title-7        nil nil)
+(defface sculpture-theme-light-elfeed-title-8        nil nil)
+(defface sculpture-theme-light-elfeed-star-face      nil nil)
 
 
 ;;;; definition
@@ -134,7 +134,7 @@
    `(italic                     ((,class (:slant italic))))
    `(underline                  ((,class (:underline t))))
    `(variable-pitch             ((,class (:height 1.0))))
-   `(sculpture-light-theme-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
+   `(sculpture-theme-light-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
    `(fringe                     ((,class (:background ,bg))))
    `(vertical-border            ((,class (:foreground ,bw11))))
    `(window-divider             ((,class (:foreground ,bw13))))
@@ -186,10 +186,10 @@
    `(mode-line-inactive         ((,class (:foreground ,bw03 :background ,bw14 :box (:line-width 1 :color ,bw12)))))
 
 ;;;;;;; custom
-   `(sculpture-light-theme-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
-   `(sculpture-light-theme-modeline-percent                  ((,class (:inherit (cursor variable-pitch))) :foreground ,bg :background ,bw00))
-   `(sculpture-light-theme-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,bw04 :weight bold))))
-   `(sculpture-light-theme-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,bw06))))
+   `(sculpture-theme-light-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
+   `(sculpture-theme-light-modeline-percent                  ((,class (:inherit (cursor variable-pitch))) :foreground ,bg :background ,bw00))
+   `(sculpture-theme-light-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,bw04 :weight bold))))
+   `(sculpture-theme-light-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,bw06))))
    `(doom-modeline-highlight           ((,class (:inherit variable-pitch :foreground ,ot04 :weight bold))))
    `(doom-modeline-alternate-highlight ((,class (:inherit variable-pitch :foreground ,cs02))))
 
@@ -278,15 +278,15 @@
    `(ivy-yanked-word                 ((,class (:foreground ,ot07))))
 
 ;;;;;; Swiper
-   `(swiper-background-match-face-1  ((,class (:inherit sculpture-light-theme-head-outline-2))))
-   `(swiper-background-match-face-2  ((,class (:inherit sculpture-light-theme-head-outline-4))))
-   `(swiper-background-match-face-3  ((,class (:inherit sculpture-light-theme-head-outline-5))))
-   `(swiper-background-match-face-4  ((,class (:inherit sculpture-light-theme-head-outline-3))))
+   `(swiper-background-match-face-1  ((,class (:inherit sculpture-theme-light-head-outline-2))))
+   `(swiper-background-match-face-2  ((,class (:inherit sculpture-theme-light-head-outline-4))))
+   `(swiper-background-match-face-3  ((,class (:inherit sculpture-theme-light-head-outline-5))))
+   `(swiper-background-match-face-4  ((,class (:inherit sculpture-theme-light-head-outline-3))))
    `(swiper-line-face                ((,class (:underline ,ha04 :extend t))))
-   `(swiper-match-face-1             ((,class (:inherit sculpture-light-theme-head-outline-2 :weight bold))))
-   `(swiper-match-face-2             ((,class (:inherit sculpture-light-theme-head-outline-4 :weight bold))))
-   `(swiper-match-face-3             ((,class (:inherit sculpture-light-theme-head-outline-5 :weight bold))))
-   `(swiper-match-face-4             ((,class (:inherit sculpture-light-theme-head-outline-3 :weight bold))))
+   `(swiper-match-face-1             ((,class (:inherit sculpture-theme-light-head-outline-2 :weight bold))))
+   `(swiper-match-face-2             ((,class (:inherit sculpture-theme-light-head-outline-4 :weight bold))))
+   `(swiper-match-face-3             ((,class (:inherit sculpture-theme-light-head-outline-5 :weight bold))))
+   `(swiper-match-face-4             ((,class (:inherit sculpture-theme-light-head-outline-3 :weight bold))))
 
 ;;;;;; rainbow-delimiter
    `(rainbow-delimiters-base-face       ((,class (:foreground ,cs01))))
@@ -344,25 +344,25 @@
    `(imenu-list-entry-subalist-face-1 ((,class (:foreground ,ot12 :underline t))))
    `(imenu-list-entry-subalist-face-0 ((,class (:foreground ,ot04 :underline t))))
 
-;;;;;; Sculpture-Light-Theme-Head-Outline
-   `(sculpture-light-theme-head-outline-1 ((,class (:foreground ,ha04))))
-   `(sculpture-light-theme-head-outline-2 ((,class (:foreground ,ot05))))
-   `(sculpture-light-theme-head-outline-3 ((,class (:foreground ,ot04))))
-   `(sculpture-light-theme-head-outline-4 ((,class (:foreground ,cs02))))
-   `(sculpture-light-theme-head-outline-5 ((,class (:foreground ,ha00))))
-   `(sculpture-light-theme-head-outline-6 ((,class (:foreground ,ot10))))
-   `(sculpture-light-theme-head-outline-7 ((,class (:foreground ,ha06))))
-   `(sculpture-light-theme-head-outline-8 ((,class (:foreground ,ot07))))
+;;;;;; Sculpture-Theme-Light-Head-Outline
+   `(sculpture-theme-light-head-outline-1 ((,class (:foreground ,ha04))))
+   `(sculpture-theme-light-head-outline-2 ((,class (:foreground ,ot05))))
+   `(sculpture-theme-light-head-outline-3 ((,class (:foreground ,ot04))))
+   `(sculpture-theme-light-head-outline-4 ((,class (:foreground ,cs02))))
+   `(sculpture-theme-light-head-outline-5 ((,class (:foreground ,ha00))))
+   `(sculpture-theme-light-head-outline-6 ((,class (:foreground ,ot10))))
+   `(sculpture-theme-light-head-outline-7 ((,class (:foreground ,ha06))))
+   `(sculpture-theme-light-head-outline-8 ((,class (:foreground ,ot07))))
 
 ;;;;;; Outline
-   `(outline-1 ((,class (:inherit (sculpture-light-theme-head-outline-1 variable-pitch) :overline t))))
-   `(outline-2 ((,class (:inherit (sculpture-light-theme-head-outline-2 variable-pitch) :overline t))))
-   `(outline-3 ((,class (:inherit (sculpture-light-theme-head-outline-3 variable-pitch) :overline t))))
-   `(outline-4 ((,class (:inherit (sculpture-light-theme-head-outline-4 variable-pitch) :overline t))))
-   `(outline-5 ((,class (:inherit (sculpture-light-theme-head-outline-5 variable-pitch) :overline t))))
-   `(outline-6 ((,class (:inherit (sculpture-light-theme-head-outline-6 variable-pitch) :overline t))))
-   `(outline-7 ((,class (:inherit (sculpture-light-theme-head-outline-7 variable-pitch) :overline t))))
-   `(outline-8 ((,class (:inherit (sculpture-light-theme-head-outline-8 variable-pitch) :overline t))))
+   `(outline-1 ((,class (:inherit (sculpture-theme-light-head-outline-1 variable-pitch) :overline t))))
+   `(outline-2 ((,class (:inherit (sculpture-theme-light-head-outline-2 variable-pitch) :overline t))))
+   `(outline-3 ((,class (:inherit (sculpture-theme-light-head-outline-3 variable-pitch) :overline t))))
+   `(outline-4 ((,class (:inherit (sculpture-theme-light-head-outline-4 variable-pitch) :overline t))))
+   `(outline-5 ((,class (:inherit (sculpture-theme-light-head-outline-5 variable-pitch) :overline t))))
+   `(outline-6 ((,class (:inherit (sculpture-theme-light-head-outline-6 variable-pitch) :overline t))))
+   `(outline-7 ((,class (:inherit (sculpture-theme-light-head-outline-7 variable-pitch) :overline t))))
+   `(outline-8 ((,class (:inherit (sculpture-theme-light-head-outline-8 variable-pitch) :overline t))))
    `(outline-minor-0 ((,class (:background ,bg))))
    `(outline-minor-1 ((,class (:inherit outline-1 :extend t))))
    `(outline-minor-2 ((,class (:inherit outline-2 :extend t))))
@@ -374,12 +374,12 @@
    `(outline-minor-8 ((,class (:inherit outline-8 :extend t))))
 
 ;;;;;; markdown
-   `(markdown-header-face-1 ((,class (:inherit sculpture-light-theme-head-outline-1))))
-   `(markdown-header-face-2 ((,class (:inherit sculpture-light-theme-head-outline-2))))
-   `(markdown-header-face-3 ((,class (:inherit sculpture-light-theme-head-outline-3))))
-   `(markdown-header-face-4 ((,class (:inherit sculpture-light-theme-head-outline-4))))
-   `(markdown-header-face-5 ((,class (:inherit sculpture-light-theme-head-outline-5))))
-   `(markdown-header-face-6 ((,class (:inherit sculpture-light-theme-head-outline-6))))
+   `(markdown-header-face-1 ((,class (:inherit sculpture-theme-light-head-outline-1))))
+   `(markdown-header-face-2 ((,class (:inherit sculpture-theme-light-head-outline-2))))
+   `(markdown-header-face-3 ((,class (:inherit sculpture-theme-light-head-outline-3))))
+   `(markdown-header-face-4 ((,class (:inherit sculpture-theme-light-head-outline-4))))
+   `(markdown-header-face-5 ((,class (:inherit sculpture-theme-light-head-outline-5))))
+   `(markdown-header-face-6 ((,class (:inherit sculpture-theme-light-head-outline-6))))
    `(markdown-link-face ((,class (:inherit org-link))))
 
 ;;;;;; org
@@ -462,14 +462,14 @@
    `(org-checkbox-statistics-todo ((,class (:foreground ,cs02))))
 
 ;;;;;;; level
-   `(org-level-1 ((,class (:inherit sculpture-light-theme-head-outline-1))))
-   `(org-level-2 ((,class (:inherit sculpture-light-theme-head-outline-2))))
-   `(org-level-3 ((,class (:inherit sculpture-light-theme-head-outline-3))))
-   `(org-level-4 ((,class (:inherit sculpture-light-theme-head-outline-4))))
-   `(org-level-5 ((,class (:inherit sculpture-light-theme-head-outline-5))))
-   `(org-level-6 ((,class (:inherit sculpture-light-theme-head-outline-6))))
-   `(org-level-7 ((,class (:inherit sculpture-light-theme-head-outline-7))))
-   `(org-level-8 ((,class (:inherit sculpture-light-theme-head-outline-8))))
+   `(org-level-1 ((,class (:inherit sculpture-theme-light-head-outline-1))))
+   `(org-level-2 ((,class (:inherit sculpture-theme-light-head-outline-2))))
+   `(org-level-3 ((,class (:inherit sculpture-theme-light-head-outline-3))))
+   `(org-level-4 ((,class (:inherit sculpture-theme-light-head-outline-4))))
+   `(org-level-5 ((,class (:inherit sculpture-theme-light-head-outline-5))))
+   `(org-level-6 ((,class (:inherit sculpture-theme-light-head-outline-6))))
+   `(org-level-7 ((,class (:inherit sculpture-theme-light-head-outline-7))))
+   `(org-level-8 ((,class (:inherit sculpture-theme-light-head-outline-8))))
 
 ;;;;;; shr
    `(shr-link ((,class (:inherit org-link))))
@@ -519,15 +519,15 @@
    `(elfeed-search-unread-count-face ((,class (:foreground ,bg :background ,ot09 :inherit variable-pitch))))
    `(elfeed-search-unread-title-face ((,class (:weight semibold))))
 
-   `(sculpture-light-theme-elfeed-title-1   ((,class (:inherit sculpture-light-theme-head-outline-1))))
-   `(sculpture-light-theme-elfeed-title-2   ((,class (:inherit sculpture-light-theme-head-outline-2))))
-   `(sculpture-light-theme-elfeed-title-3   ((,class (:inherit sculpture-light-theme-head-outline-3))))
-   `(sculpture-light-theme-elfeed-title-4   ((,class (:inherit sculpture-light-theme-head-outline-4))))
-   `(sculpture-light-theme-elfeed-title-5   ((,class (:inherit sculpture-light-theme-head-outline-5))))
-   `(sculpture-light-theme-elfeed-title-6   ((,class (:inherit sculpture-light-theme-head-outline-6))))
-   `(sculpture-light-theme-elfeed-title-7   ((,class (:inherit sculpture-light-theme-head-outline-7))))
-   `(sculpture-light-theme-elfeed-title-8   ((,class (:inherit sculpture-light-theme-head-outline-8))))
-   `(sculpture-light-theme-elfeed-star-face ((,class (:underline (:color ,ha04 :line-width -1)))))
+   `(sculpture-theme-light-elfeed-title-1   ((,class (:inherit sculpture-theme-light-head-outline-1))))
+   `(sculpture-theme-light-elfeed-title-2   ((,class (:inherit sculpture-theme-light-head-outline-2))))
+   `(sculpture-theme-light-elfeed-title-3   ((,class (:inherit sculpture-theme-light-head-outline-3))))
+   `(sculpture-theme-light-elfeed-title-4   ((,class (:inherit sculpture-theme-light-head-outline-4))))
+   `(sculpture-theme-light-elfeed-title-5   ((,class (:inherit sculpture-theme-light-head-outline-5))))
+   `(sculpture-theme-light-elfeed-title-6   ((,class (:inherit sculpture-theme-light-head-outline-6))))
+   `(sculpture-theme-light-elfeed-title-7   ((,class (:inherit sculpture-theme-light-head-outline-7))))
+   `(sculpture-theme-light-elfeed-title-8   ((,class (:inherit sculpture-theme-light-head-outline-8))))
+   `(sculpture-theme-light-elfeed-star-face ((,class (:underline (:color ,ha04 :line-width -1)))))
 
 ;;;;;; transient
    `(transient-unreachable       ((,class (:foreground ,bw04))))
@@ -555,11 +555,11 @@
    `(magit-popup-disabled-argument((,class (:foreground ,ot11))))
 
 ;;;;;; orderless
-   `(orderless-match-face-0 ((,class (:inherit sculpture-light-theme-head-outline-2 :weight bold))))
-   `(orderless-match-face-1 ((,class (:inherit sculpture-light-theme-head-outline-4 :weight bold))))
-   `(orderless-match-face-2 ((,class (:inherit sculpture-light-theme-head-outline-5 :weight bold))))
-   `(orderless-match-face-3 ((,class (:inherit sculpture-light-theme-head-outline-3 :weight bold))))))
+   `(orderless-match-face-0 ((,class (:inherit sculpture-theme-light-head-outline-2 :weight bold))))
+   `(orderless-match-face-1 ((,class (:inherit sculpture-theme-light-head-outline-4 :weight bold))))
+   `(orderless-match-face-2 ((,class (:inherit sculpture-theme-light-head-outline-5 :weight bold))))
+   `(orderless-match-face-3 ((,class (:inherit sculpture-theme-light-head-outline-3 :weight bold))))))
 
 (provide-theme 'sculpture-light)
 
-;;; sculpture-light-theme.el ends here
+;;; sculpture-theme-light.el ends here
