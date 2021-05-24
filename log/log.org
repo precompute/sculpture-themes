@@ -449,3 +449,160 @@ make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 
 #+end_src
+
+* ebf2ff9
+[21-05-24 11:13:48]
+#+begin_src
+
+### sculpture-themes-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+```
+sculpture-themes-dark-theme.el:43:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-1' fails to specify containing group
+sculpture-themes-dark-theme.el:44:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-2' fails to specify containing group
+sculpture-themes-dark-theme.el:45:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-3' fails to specify containing group
+sculpture-themes-dark-theme.el:46:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-4' fails to specify containing group
+sculpture-themes-dark-theme.el:47:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-5' fails to specify containing group
+sculpture-themes-dark-theme.el:48:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-6' fails to specify containing group
+sculpture-themes-dark-theme.el:49:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-7' fails to specify containing group
+sculpture-themes-dark-theme.el:50:1:Warning: defface for
+    `sculpture-theme-dark-head-outline-8' fails to specify containing group
+sculpture-themes-dark-theme.el:51:1:Warning: defface for
+    `sculpture-theme-dark-modeline-percent' fails to specify containing group
+sculpture-themes-dark-theme.el:52:1:Warning: defface for
+    `sculpture-theme-dark-modeline-line' fails to specify containing group
+sculpture-themes-dark-theme.el:53:1:Warning: defface for
+    `sculpture-theme-dark-modeline-mode' fails to specify containing group
+sculpture-themes-dark-theme.el:54:1:Warning: defface for
+    `sculpture-theme-dark-modeline-workspace' fails to specify containing
+    group
+sculpture-themes-dark-theme.el:55:1:Warning: defface for
+    `sculpture-theme-dark-variable-pitch-italic' fails to specify containing
+    group
+sculpture-themes-dark-theme.el:56:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-1' fails to specify containing group
+sculpture-themes-dark-theme.el:57:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-2' fails to specify containing group
+sculpture-themes-dark-theme.el:58:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-3' fails to specify containing group
+sculpture-themes-dark-theme.el:59:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-4' fails to specify containing group
+sculpture-themes-dark-theme.el:60:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-5' fails to specify containing group
+sculpture-themes-dark-theme.el:61:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-6' fails to specify containing group
+sculpture-themes-dark-theme.el:62:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-7' fails to specify containing group
+sculpture-themes-dark-theme.el:63:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-title-8' fails to specify containing group
+sculpture-themes-dark-theme.el:64:1:Warning: defface for
+    `sculpture-theme-dark-elfeed-star-face' fails to specify containing group
+```
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### sculpture-themes-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+```
+sculpture-themes-light-theme.el:47:1:Warning: defface for
+    `sculpture-theme-light-head-outline-1' fails to specify containing group
+sculpture-themes-light-theme.el:48:1:Warning: defface for
+    `sculpture-theme-light-head-outline-2' fails to specify containing group
+sculpture-themes-light-theme.el:49:1:Warning: defface for
+    `sculpture-theme-light-head-outline-3' fails to specify containing group
+sculpture-themes-light-theme.el:50:1:Warning: defface for
+    `sculpture-theme-light-head-outline-4' fails to specify containing group
+sculpture-themes-light-theme.el:51:1:Warning: defface for
+    `sculpture-theme-light-head-outline-5' fails to specify containing group
+sculpture-themes-light-theme.el:52:1:Warning: defface for
+    `sculpture-theme-light-head-outline-6' fails to specify containing group
+sculpture-themes-light-theme.el:53:1:Warning: defface for
+    `sculpture-theme-light-head-outline-7' fails to specify containing group
+sculpture-themes-light-theme.el:54:1:Warning: defface for
+    `sculpture-theme-light-head-outline-8' fails to specify containing group
+sculpture-themes-light-theme.el:55:1:Warning: defface for
+    `sculpture-theme-light-modeline-percent' fails to specify containing group
+sculpture-themes-light-theme.el:56:1:Warning: defface for
+    `sculpture-theme-light-modeline-line' fails to specify containing group
+sculpture-themes-light-theme.el:57:1:Warning: defface for
+    `sculpture-theme-light-modeline-mode' fails to specify containing group
+sculpture-themes-light-theme.el:58:1:Warning: defface for
+    `sculpture-theme-light-modeline-workspace' fails to specify containing
+    group
+sculpture-themes-light-theme.el:59:1:Warning: defface for
+    `sculpture-theme-light-variable-pitch-italic' fails to specify containing
+    group
+sculpture-themes-light-theme.el:60:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-1' fails to specify containing group
+sculpture-themes-light-theme.el:61:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-2' fails to specify containing group
+sculpture-themes-light-theme.el:62:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-3' fails to specify containing group
+sculpture-themes-light-theme.el:63:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-4' fails to specify containing group
+sculpture-themes-light-theme.el:64:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-5' fails to specify containing group
+sculpture-themes-light-theme.el:65:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-6' fails to specify containing group
+sculpture-themes-light-theme.el:66:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-7' fails to specify containing group
+sculpture-themes-light-theme.el:67:1:Warning: defface for
+    `sculpture-theme-light-elfeed-title-8' fails to specify containing group
+sculpture-themes-light-theme.el:68:1:Warning: defface for
+    `sculpture-theme-light-elfeed-star-face' fails to specify containing group
+```
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-themes-dark-theme.el
+Loading sculpture-themes-light-theme.el
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- No .el file matches the name 'shx'
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-themes-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-themes-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Themes with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+#+end_src
