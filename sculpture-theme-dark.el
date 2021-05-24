@@ -569,5 +569,6 @@
    `(ediff-even-diff-A ((,class (:background ,ot06))))))
 
 (provide-theme 'sculpture-dark)
+(provide 'sculpture-theme-dark)
 
 ;;; sculpture-theme-dark.el ends here
