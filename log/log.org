@@ -606,3 +606,66 @@ make: *** [Makefile:5: run] Error 2
 make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 #+end_src
+
+* e1acef8
+[21-05-24 11:19:56]
+#+begin_src
+
+### sculpture-themes-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### sculpture-themes-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-themes-dark-theme.el
+Loading sculpture-themes-light-theme.el
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- No .el file matches the name 'shx'
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-themes-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-themes-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Themes with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+#+end_src
