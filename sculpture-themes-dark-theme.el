@@ -7,7 +7,10 @@
 ;; Created: January 06, 2021
 ;; Modified: May 20, 2021
 ;; Version: 1.0.0
-;; Package-Requires: ((emacs "26.1"))
+
+;; Local variables:
+;; package-lint-main-file: "sculpture-themes.el"
+;; end:
 
 ;; sculpture-themes-dark : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.

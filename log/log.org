@@ -783,3 +783,73 @@ make: *** [Makefile:5: run] Error 2
 make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 #+end_src
+
+* 9465d04
+[21-05-24 11:42:59]
+#+begin_src
+
+### sculpture-themes-dark-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+2 issues found:
+1:0: error: There is no `provide' form.
+10:0: error: Package-Requires outside the main file have no effect.
+```
+
+
+### sculpture-themes-light-theme.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+2 issues found:
+1:0: error: There is no `provide' form.
+10:0: error: Package-Requires outside the main file have no effect.
+```
+
+
+### sculpture-themes.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+- No issues!
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-themes-dark-theme.el
+Loading sculpture-themes-light-theme.el
+Loading sculpture-themes.el
+Done.
+```
+
+### Package ###
+
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-themes-dark-theme.el (GPL) -- Dark theme with vivid colors
+- sculpture-themes-light-theme.el (GPL) -- Light theme with vivid colors
+- sculpture-themes.el (GPL) -- Themes with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+#+end_src
