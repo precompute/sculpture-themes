@@ -37,6 +37,7 @@
 ;; The light version prizes readability over colors.
 
 ;;; Code:
+(require 'sculpture-theme)
 
 ;;;; Custom Faces
 (defgroup sculpture-theme-light ()
@@ -561,6 +562,6 @@
    `(orderless-match-face-3 ((,class (:inherit sculpture-theme-light-head-outline-3 :weight bold))))))
 
 (provide-theme 'sculpture-light)
-(provide 'sculpture-theme-light)
+;; (provide 'sculpture-theme-light)
 
 ;;; sculpture-theme-light.el ends here

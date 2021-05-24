@@ -52,3 +52,58 @@ make: *** [Makefile:5: run] Error 2
 make: Leaving directory '/home/runner/melpazoid'
 Error: Process completed with exit code 2.
 #+end_src
+
+* dfeced4
+[21-05-24 09:36:27]
+#+begin_src
+
+### sculpture-theme-dark.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+70:0: error: "sculpture-dark" doesn't start with package's prefix "sculpture-theme-dark".
+```
+
+
+### sculpture-theme-light.el ###
+
+byte-compile (using Emacs 27.1):
+- No issues!
+
+checkdoc (using version 0.6.2):
+- No issues!
+
+package-lint (using version 20210511.2055):
+```
+1 issue found:
+71:0: error: "sculpture-light" doesn't start with package's prefix "sculpture-theme-light".
+```
+
+
+### Loadability ###
+
+Verifying ability to #'load each file:
+```
+Loading sculpture-theme-dark.el
+Loading sculpture-theme-light.el
+Done.
+```
+
+### Package ###
+
+- No .el file matches the name 'shx'
+- GitHub API found `GNU General Public License v3.0`
+- sculpture-theme-dark.el (GPL) -- Dark theme with vivid colors
+- sculpture-theme-light.el (GPL) -- Light theme with vivid colors
+
+make: *** [Makefile:5: run] Error 2
+make: Leaving directory '/home/runner/melpazoid'
+Error: Process completed with exit code 2.
+#+end_src

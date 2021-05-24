@@ -37,12 +37,9 @@
 ;; The dark version prizes colors over readability.
 
 ;;; Code:
+(require 'sculpture-theme)
 
 ;;;; Custom Faces
-(defgroup sculpture-theme-dark ()
-  "Group for sculpture-theme-dark."
-  :group 'sculpture-faces)
-
 (defface sculpture-theme-dark-head-outline-1        nil nil)
 (defface sculpture-theme-dark-head-outline-2        nil nil)
 (defface sculpture-theme-dark-head-outline-3        nil nil)
@@ -569,6 +566,6 @@
    `(ediff-even-diff-A ((,class (:background ,ot06))))))
 
 (provide-theme 'sculpture-dark)
-(provide 'sculpture-theme-dark)
+;; (provide 'sculpture-theme-dark)
 
 ;;; sculpture-theme-dark.el ends here
