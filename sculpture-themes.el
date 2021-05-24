@@ -51,6 +51,6 @@
  'custom-theme-load-path
  (if load-file-name (file-name-directory load-file-name) default-directory))
 
-(provide 'sculpture-theme)
+(provide 'sculpture-themes)
 
 ;;; sculpture-theme.el ends here
