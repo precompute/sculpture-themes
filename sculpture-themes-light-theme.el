@@ -6,13 +6,13 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 20, 2021
-;; Version: 1.0.0
+;; Version: 1.1.0
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
 ;; end:
 
-;; Sculpture-theme : A dark theme for emacs with vivid colors, inspired by
+;; sculpture-themes-light : A light theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
 ;; Copyright (C) 2021 t-e-r-m
@@ -43,9 +43,6 @@
 (require 'sculpture-themes)
 
 ;;;; Custom Faces
-;; (defgroup sculpture-themes-light ()
-;;   "Group for sculpture-themes-light"
-;;   :group 'sculpture-light-faces)
 
 (defface sculpture-themes-light-head-outline-1        nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-head-outline-2        nil nil :group 'sculpture-themes-light)
@@ -191,9 +188,9 @@
 
 ;;;;;;; custom
    `(sculpture-themes-light-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
-   `(sculpture-themes-light-modeline-percent                  ((,class (:inherit (cursor variable-pitch))) :foreground ,bg :background ,bw00))
-   `(sculpture-themes-light-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,bw04 :weight bold))))
-   `(sculpture-themes-light-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,bw06))))
+   `(sculpture-themes-light-modeline-percent                  ((,class (:inherit (cursor variable-pitch))) :foreground ,bg :background ,ot03))
+   `(sculpture-themes-light-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
+   `(sculpture-themes-light-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,cs02))))
    `(doom-modeline-highlight           ((,class (:inherit variable-pitch :foreground ,ot04 :weight bold))))
    `(doom-modeline-alternate-highlight ((,class (:inherit variable-pitch :foreground ,cs02))))
 

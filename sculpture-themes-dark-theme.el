@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 20, 2021
-;; Version: 1.0.0
+;; Version: 1.1.0
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -488,8 +488,8 @@
    `(company-tooltip-common     ((,class (:foreground ,fg))))
    `(company-tooltip-annotation ((,class (:foreground ,ha02))))
    `(company-tooltip            ((,class (:foreground ,fg :background ,ha09 :box (:color ,bw01)))))
-   `(company-scrollbar-,bg       ((,class (:background ,bg))))
-   `(company-scrollbar-,fg       ((,class (:background ,bw02))))
+   `(company-scrollbar-bg       ((,class (:background ,bg))))
+   `(company-scrollbar-fg       ((,class (:background ,bw02))))
 
 ;;;;;; message
    `(message-header-name    ((,class (:foreground ,ot00 :inherit variable-pitch))))
