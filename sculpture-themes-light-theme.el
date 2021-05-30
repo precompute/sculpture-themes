@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 20, 2021
-;; Version: 1.1.0
+;; Modified: May 29, 2021
+;; Version: 1.1.1
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -76,7 +76,6 @@
 ;;;;; palette
 
       (fg "#000000")
-      (bw00 "#000000")
       (bw01 "#111111")
       (bw02 "#222222")
       (bw03 "#333333")

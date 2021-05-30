@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 20, 2021
-;; Version: 1.1.0
+;; Modified: May 29, 2021
+;; Version: 1.1.1
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -243,9 +243,9 @@
    `(diredfl-compressed-file-suffix ((,class (:foreground ,bw09))))
 
 ;;;;;; dired-subtree
-   `(dired-subtree-depth-1-face ((,class (:background ,bg))))
-   `(dired-subtree-depth-2-face ((,class (:background ,bg))))
-   `(dired-subtree-depth-3-face ((,class (:background ,bg))))
+   `(dired-subtree-depth-1-face ((,class (:background ,ha09))))
+   `(dired-subtree-depth-2-face ((,class (:background ,ot06))))
+   `(dired-subtree-depth-3-face ((,class (:background ,bw02))))
    `(dired-subtree-depth-4-face ((,class (:background ,bg))))
    `(dired-subtree-depth-5-face ((,class (:background ,bg))))
    `(dired-subtree-depth-6-face ((,class (:background ,bg))))
