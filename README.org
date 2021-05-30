@@ -1,4 +1,5 @@
 #+TITLE: Readme
+#+HTML: <a href="https://melpa.org/#/sculpture-themes"><img src="https://melpa.org/packages/sculpture-themes-badge.svg"></a>
 #+HTML: <img src="images/header.jpg" align="center">
 
 * TOC :toc:
@@ -6,6 +7,7 @@
   - [[#sculpture-1][Sculpture]]
   - [[#sculpture-light][Sculpture-light]]
   - [[#screenshots][Screenshots]]
+  - [[#supported-modes][Supported Modes]]
 
 * Sculpture
 
@@ -28,3 +30,31 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 [[images/sculpture.jpg]]
 
 [[images/sculpture-light.jpg]]
+
+** Supported Modes
+
++ default emacs faces
++ company
++ dired
++ diredfl
++ dired-subtree
++ ediff
++ elfeed
++ evil
++ git-gutter
++ ido
++ imenu-list
++ info
++ isearch
++ Ivy
++ magit
++ markdown
++ occur
++ orderless
++ org
++ rainbow-delimter
++ shr
++ Swiper
++ transient
++ workspace
++ A few custom faces for modeline, org, etc.
