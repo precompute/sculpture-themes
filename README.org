@@ -34,6 +34,7 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 ** Supported Modes
 
 + default emacs faces
++ centaur-tabs
 + company
 + dired
 + diredfl
@@ -41,6 +42,7 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 + ediff
 + elfeed
 + evil
++ flycheck
 + git-gutter
 + ido
 + imenu-list
@@ -50,11 +52,16 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 + magit
 + markdown
 + occur
++ olivetti
 + orderless
 + org
++ paren
 + rainbow-delimter
 + shr
 + Swiper
++ tabs
 + transient
++ treesitter
++ vertico
 + workspace
 + A few custom faces for modeline, org, etc.
