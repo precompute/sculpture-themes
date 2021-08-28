@@ -197,7 +197,7 @@
 
 ;;;;;;; custom
    `(sculpture-themes-light-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
-   `(sculpture-themes-light-modeline-percent                  ((,class (:inherit (cursor variable-pitch))) :foreground ,bg :background ,ot03))
+   `(sculpture-themes-light-modeline-percent                  ((,class (:inherit variable-pitch :foreground ,bg :background ,ot03))))
    `(sculpture-themes-light-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
    `(sculpture-themes-light-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,cs02))))
    `(doom-modeline-highlight           ((,class (:inherit variable-pitch :foreground ,ot04 :weight bold))))
