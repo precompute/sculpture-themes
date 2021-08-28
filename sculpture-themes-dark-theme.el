@@ -166,6 +166,8 @@
 
    `(popup-tip-face           ((,class (:inherit (variable-pitch button) :foreground ,ot05))))
    `(highlight-numbers-number ((,class (:foreground ,ot18))))
+   `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
+   `(highlight-quoted-quote   ((,class (:foreground ,ot01))))
 
 ;;;;;; font-lock
    `(font-lock-builtin-face              ((,class (:foreground ,ot05 :weight bold))))
@@ -627,12 +629,12 @@
    `(centaur-tabs-modified-marker-unselected ((,class (:inherit mode-line))))
 
 ;;;;;; highlight-indent-guides
-   `(highlight-indent-guides-odd-face             ((,class (:foreground ,bw04))))
-   `(highlight-indent-guides-even-face            ((,class (:foreground ,bw04))))
-   `(highlight-indent-guides-character-face       ((,class (:foreground ,bw05))))
-   `(highlight-indent-guides-stack-odd-face       ((,class (:foreground ,bw06))))
-   `(highlight-indent-guides-stack-even-face      ((,class (:foreground ,bw06))))
-   `(highlight-indent-guides-stack-character-face ((,class (:foreground ,bw07))))
+   `(highlight-indent-guides-odd-face             ((,class (:foreground ,bw02))))
+   `(highlight-indent-guides-even-face            ((,class (:foreground ,bw02))))
+   `(highlight-indent-guides-character-face       ((,class (:foreground ,bw03))))
+   `(highlight-indent-guides-stack-odd-face       ((,class (:foreground ,bw04))))
+   `(highlight-indent-guides-stack-even-face      ((,class (:foreground ,bw04))))
+   `(highlight-indent-guides-stack-character-face ((,class (:foreground ,bw05))))
    `(highlight-indent-guides-top-odd-face         ((,class (:foreground ,bw08))))
    `(highlight-indent-guides-top-even-face        ((,class (:foreground ,bw08))))
    `(highlight-indent-guides-top-character-face   ((,class (:foreground ,bw09))))
