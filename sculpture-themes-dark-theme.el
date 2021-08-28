@@ -125,7 +125,8 @@
       (ot15 "#161F14")
       (ot16 "#5F1416")
       (ot17 "#2E2C0A")
-      (ot18 "#96A880"))
+      (ot18 "#96A880")
+      (ot19 "#F61E2F"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -175,7 +176,7 @@
    `(font-lock-string-face               ((,class (:foreground ,ha00))))
    `(font-lock-type-face                 ((,class (:foreground ,ha07))))
    `(font-lock-variable-name-face        ((,class (:foreground ,cs01))))
-   `(font-lock-doc-face                  ((,class (:foreground ,fg))))
+   `(font-lock-doc-face                  ((,class (:foreground ,ot19))))
    `(font-lock-warning-face              ((,class (:foreground ,cs00))))
    `(font-lock-preprocessor-face         ((,class (:background ,ha01))))
    `(font-lock-negation-char-face        ((,class (:foreground ,ha04))))
