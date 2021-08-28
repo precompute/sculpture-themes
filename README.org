@@ -44,6 +44,8 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 + evil
 + flycheck
 + git-gutter
++ highlight-indentation
++ highlight-indent-guides
 + ido
 + imenu-list
 + info

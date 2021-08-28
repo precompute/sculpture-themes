@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: August 28, 2021
-;; Version: 1.2.1
+;; Version: 1.2.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -79,6 +79,7 @@
       (bw02 "#222222")
       (bw03 "#333333")
       (bw04 "#444444")
+      (bw05 "#555555")
       (bw06 "#666666")
       (bw07 "#777777")
       (bw08 "#888888")
@@ -623,7 +624,24 @@
    `(centaur-tabs-selected-modified          ((,class (:inherit mode-line))))
    `(centaur-tabs-unselected-modified        ((,class (:inherit mode-line))))
    `(centaur-tabs-modified-marker-selected   ((,class (:inherit mode-line))))
-   `(centaur-tabs-modified-marker-unselected ((,class (:inherit mode-line))))))
+   `(centaur-tabs-modified-marker-unselected ((,class (:inherit mode-line))))
+
+;;;;;; highlight-indent-guides
+   `(highlight-indent-guides-odd-face             ((,class (:foreground ,bw04))))
+   `(highlight-indent-guides-even-face            ((,class (:foreground ,bw04))))
+   `(highlight-indent-guides-character-face       ((,class (:foreground ,bw05))))
+   `(highlight-indent-guides-stack-odd-face       ((,class (:foreground ,bw06))))
+   `(highlight-indent-guides-stack-even-face      ((,class (:foreground ,bw06))))
+   `(highlight-indent-guides-stack-character-face ((,class (:foreground ,bw07))))
+   `(highlight-indent-guides-top-odd-face         ((,class (:foreground ,bw08))))
+   `(highlight-indent-guides-top-even-face        ((,class (:foreground ,bw08))))
+   `(highlight-indent-guides-top-character-face   ((,class (:foreground ,bw09))))
+
+;;;;;; highlight-indentation
+   `(highlight-indentation-face                ((,class (:background ,bw02))))
+   `(highlight-indentation-guides-odd-face     ((,class (:inherit highlight-indentation-face))))
+   `(highlight-indentation-guides-even-face    ((,class (:inherit highlight-indentation-face))))
+   `(highlight-indentation-current-column-face ((,class (:background ,bw03))))))
 
 (provide-theme 'sculpture-themes-dark)
 
