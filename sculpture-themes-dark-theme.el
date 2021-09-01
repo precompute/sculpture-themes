@@ -164,10 +164,14 @@
    `(whitespace-tab       ((,class (:foreground ,ot00 :background ,ot06))))
    `(escape-glyph         ((,class (:foreground ,ot07))))
 
-   `(popup-tip-face           ((,class (:inherit (variable-pitch button) :foreground ,ot05))))
    `(highlight-numbers-number ((,class (:foreground ,ot18))))
    `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
    `(highlight-quoted-quote   ((,class (:foreground ,ot01))))
+
+;;;;;; popup
+   `(popup-face               ((,class (:inherit (button) :foreground ,ot05))))
+   `(popup-menu-face          ((,class (:inherit (popup-face)))))
+   `(popup-tip-face           ((,class (:inherit (popup-face variable-pitch)))))
 
 ;;;;;; font-lock
    `(font-lock-builtin-face              ((,class (:foreground ,ot05 :weight bold))))
@@ -643,7 +647,12 @@
    `(highlight-indentation-face                ((,class (:background ,bw02))))
    `(highlight-indentation-guides-odd-face     ((,class (:inherit highlight-indentation-face))))
    `(highlight-indentation-guides-even-face    ((,class (:inherit highlight-indentation-face))))
-   `(highlight-indentation-current-column-face ((,class (:background ,bw03))))))
+   `(highlight-indentation-current-column-face ((,class (:background ,bw03))))
+
+;;;;;; writegood
+   `(writegood-weasels-face       ((,class (:underline (:line-width -1 :color ,cs00)))))
+   `(writegood-duplicates-face    ((,class (:underline (:line-width -1 :color ,ot09)))))
+   `(writegood-passive-voice-face ((,class (:underline (:line-width -1 :color ,ot08)))))))
 
 (provide-theme 'sculpture-themes-dark)
 
