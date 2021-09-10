@@ -53,7 +53,7 @@
 (defface sculpture-themes-light-head-outline-7        nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-head-outline-8        nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-modeline-percent      nil nil :group 'sculpture-themes-light)
-(defface sculpture-themes-light-modeline-line         nil nil :group 'sculpture-themes-light)
+;; (defface sculpture-themes-light-modeline-line         nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-modeline-mode         nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-modeline-workspace    nil nil :group 'sculpture-themes-light)
 (defface sculpture-themes-light-variable-pitch-italic nil nil :group 'sculpture-themes-light)
@@ -196,10 +196,12 @@
    `(mode-line-inactive         ((,class (:foreground ,bw03 :background ,bw14 :box (:line-width 1 :color ,bw12)))))
 
 ;;;;;;; custom
-   `(sculpture-themes-light-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
-   `(sculpture-themes-light-modeline-percent                  ((,class (:inherit variable-pitch :foreground ,bg :background ,ot03))))
-   `(sculpture-themes-light-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
-   `(sculpture-themes-light-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,cs02))))
+   ;; ;; `(sculpture-themes-light-modeline-line                     ((,class (:inherit (cursor variable-pitch))) :foreground ,fg))
+   ;; `(sculpture-themes-light-modeline-line      ((,class (:inherit (cursor variable-pitch) :foreground ,fg))))
+   ;; `(sculpture-themes-light-modeline-line   ((,class (:inherit variable-pitch :foreground ,bg :background ,ot03))))
+   `(sculpture-themes-light-modeline-percent   ((,class (:inherit variable-pitch :foreground ,bg :background ,ot03))))
+   `(sculpture-themes-light-modeline-mode      ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
+   `(sculpture-themes-light-modeline-workspace ((,class (:inherit variable-pitch :foreground ,cs02))))
    `(doom-modeline-highlight           ((,class (:inherit variable-pitch :foreground ,ot04 :weight bold))))
    `(doom-modeline-alternate-highlight ((,class (:inherit variable-pitch :foreground ,cs02))))
 
