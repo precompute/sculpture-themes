@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: August 28, 2021
-;; Version: 1.2.2
+;; Modified: September 22, 2021
+;; Version: 1.2.3
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
