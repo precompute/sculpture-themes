@@ -657,7 +657,10 @@
 ;;;;;; writegood
    `(writegood-weasels-face       ((,class (:underline (:line-width -1 :color ,cs00)))))
    `(writegood-duplicates-face    ((,class (:underline (:line-width -1 :color ,ot09)))))
-   `(writegood-passive-voice-face ((,class (:underline (:line-width -1 :color ,ot08)))))))
+   `(writegood-passive-voice-face ((,class (:underline (:line-width -1 :color ,ot08)))))
+
+;;;;;; eglot
+   `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit bold))))))
 
 (provide-theme 'sculpture-themes-dark)
 
