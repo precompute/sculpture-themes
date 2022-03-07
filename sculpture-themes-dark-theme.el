@@ -176,12 +176,12 @@
    `(popup-tip-face           ((,class (:inherit (popup-face variable-pitch)))))
 
 ;;;;;; font-lock
-   `(font-lock-builtin-face              ((,class (:foreground ,ot05 :weight bold))))
+   `(font-lock-builtin-face              ((,class (:foreground ,ot05 :inherit (bold)))))
    `(font-lock-comment-face              ((,class (:foreground ,bw10 :background ,ha09 :slant italic))))
    `(font-lock-comment-delimiter-face    ((,class (:foreground ,bw10 :background ,ha09 :slant italic))))
    `(font-lock-constant-face             ((,class (:foreground ,ha04))))
    `(font-lock-function-name-face        ((,class (:foreground ,ot09))))
-   `(font-lock-keyword-face              ((,class (:foreground ,ot04 :weight bold))))
+   `(font-lock-keyword-face              ((,class (:foreground ,ot04 :inherit (bold)))))
    `(font-lock-string-face               ((,class (:foreground ,ha00))))
    `(font-lock-type-face                 ((,class (:foreground ,ha07))))
    `(font-lock-variable-name-face        ((,class (:foreground ,cs01))))
@@ -206,21 +206,21 @@
    `(sculpture-themes-dark-modeline-percent                  ((,class (:inherit (cursor variable-pitch) :foreground ,fg :background ,ot03))))
    `(sculpture-themes-dark-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
    `(sculpture-themes-dark-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,cs02))))
-   `(doom-modeline-highlight           ((,class (:inherit variable-pitch :foreground ,ot04 :weight bold))))
+   `(doom-modeline-highlight           ((,class (:inherit (bold variable-pitch) :foreground ,ot04))))
    `(doom-modeline-alternate-highlight ((,class (:inherit variable-pitch :foreground ,cs02))))
 
 ;;;;;; Info mode
    `(Info-quoted       ((,class (:foreground ,ha02 :background ,bg))))
-   `(info-header-node  ((,class (:foreground ,fg   :background ,bg :weight bold))))
+   `(info-header-node  ((,class (:foreground ,fg   :background ,bg :inherit (bold)))))
    `(info-header-xref  ((,class (:foreground ,fg   :background ,bg :underline t))))
    `(info-node         ((,class (:foreground ,cs02 :background ,bg))))
    `(info-index-match  ((,class (:foreground ,fg   :background ,ha10))))
    `(info-menu-header  ((,class (:foreground ,fg   :background ,ha00 :weight bold))))
    `(info-menu-star    ((,class (:foreground ,fg   :background ,ha04))))
-   `(info-title-1      ((,class (:foreground ,ha00 :background ,bg :weight bold))))
-   `(info-title-2      ((,class (:foreground ,ha04 :background ,bg :weight bold))))
-   `(info-title-3      ((,class (:foreground ,ha07 :background ,bg :weight bold))))
-   `(info-title-4      ((,class (:foreground ,ha11 :background ,bg :weight bold))))
+   `(info-title-1      ((,class (:foreground ,ha00 :background ,bg :inherit (bold)))))
+   `(info-title-2      ((,class (:foreground ,ha04 :background ,bg :inherit (bold)))))
+   `(info-title-3      ((,class (:foreground ,ha07 :background ,bg :inherit (bold)))))
+   `(info-title-4      ((,class (:foreground ,ha11 :background ,bg :inherit (bold)))))
    `(info-xref         ((,class (:foreground ,ha01 :background ,bg :underline t))))
    `(info-xref-visited ((,class (:foreground ,ha12 :background ,bg :underline t))))
 
@@ -229,12 +229,12 @@
 
 ;;;;;; evil
    `(evil-ex-info                   ((,class (:foreground ,bw13 :slant italic))))
-   `(evil-ex-search                 ((,class (:foreground ,cs00 :background ,ha02 :weight bold))))
-   `(evil-ex-substitute-matches     ((,class (:foreground ,cs00 :strike-through t :weight bold))))
-   `(evil-ex-substitute-replacement ((,class (:foreground ,ot04 :weight bold))))
+   `(evil-ex-search                 ((,class (:foreground ,cs00 :background ,ha02 :inherit (bold)))))
+   `(evil-ex-substitute-matches     ((,class (:foreground ,cs00 :strike-through t :inherit (bold)))))
+   `(evil-ex-substitute-replacement ((,class (:foreground ,ot04 :inherit (bold)))))
 
 ;;;;;; diredfl
-   `(diredfl-dir-name               ((,class (:foreground ,fg :weight bold :inherit variable-pitch))))
+   `(diredfl-dir-name               ((,class (:foreground ,fg :inherit (bold variable-pitch)))))
    `(diredfl-number                 ((,class (:foreground ,bw06))))
    `(diredfl-symlink                ((,class (:foreground ,ot05))))
    `(diredfl-no-priv                ((,class (:foreground ,bw04))))
@@ -272,7 +272,7 @@
    `(ivy-action                      ((,class (:foreground ,fg :slant italic))))
    `(ivy-completion-annotations      ((,class (:foreground ,bw06))))
    `(ivy-confirm-face                ((,class (:foreground ,ha12))))
-   `(ivy-current-match               ((,class (:underline (:line-width -1 :color ,ot04) :weight bold))))
+   `(ivy-current-match               ((,class (:underline (:line-width -1 :color ,ot04) :inherit (bold)))))
    `(ivy-cursor                      ((,class (:foreground ,bg :background ,fg))))
    `(ivy-grep-info                   ((,class (:foreground ,fg))))
    `(ivy-grep-line-number            ((,class (:foreground ,fg))))
@@ -283,8 +283,8 @@
    `(ivy-minibuffer-match-face-3     ((,class (:foreground ,ha04 :underline t))))
    `(ivy-minibuffer-match-face-4     ((,class (:foreground ,ha00 :underline t))))
    `(ivy-minibuffer-match-highlight  ((,class (:foreground ,ot07 :box t))))
-   `(ivy-modified-buffer             ((,class (:foreground ,fg :weight bold))))
-   `(ivy-modified-outside-buffer     ((,class (:foreground ,fg :weight bold))))
+   `(ivy-modified-buffer             ((,class (:foreground ,fg :inherit (bold)))))
+   `(ivy-modified-outside-buffer     ((,class (:foreground ,fg :inherit (bold)))))
    `(ivy-org                         ((,class (:foreground ,fg))))
    `(ivy-prompt-match                ((,class (:inherit ivy-current-match))))
    `(ivy-remote                      ((,class (:foreground ,ha07))))
@@ -299,10 +299,10 @@
    `(swiper-background-match-face-3  ((,class (:inherit sculpture-themes-dark-head-outline-5))))
    `(swiper-background-match-face-4  ((,class (:inherit sculpture-themes-dark-head-outline-3))))
    `(swiper-line-face                ((,class (:underline ,ha04 :extend t))))
-   `(swiper-match-face-1             ((,class (:inherit sculpture-themes-dark-head-outline-2 :weight bold))))
-   `(swiper-match-face-2             ((,class (:inherit sculpture-themes-dark-head-outline-4 :weight bold))))
-   `(swiper-match-face-3             ((,class (:inherit sculpture-themes-dark-head-outline-5 :weight bold))))
-   `(swiper-match-face-4             ((,class (:inherit sculpture-themes-dark-head-outline-3 :weight bold))))
+   `(swiper-match-face-1             ((,class (:inherit (sculpture-themes-dark-head-outline-2 bold)))))
+   `(swiper-match-face-2             ((,class (:inherit (sculpture-themes-dark-head-outline-4 bold)))))
+   `(swiper-match-face-3             ((,class (:inherit (sculpture-themes-dark-head-outline-5 bold)))))
+   `(swiper-match-face-4             ((,class (:inherit (sculpture-themes-dark-head-outline-3 bold)))))
 
 ;;;;;; rainbow-delimiter
    `(rainbow-delimiters-base-face       ((,class (:foreground ,cs01))))
@@ -435,7 +435,7 @@
    `(org-sexp-date                 ((,class (:foreground ,ha00))))
    `(org-special-keyword           ((,class (:foreground ,cs02 :background ,ha10))))
    `(org-table                     ((,class (:foreground ,cs01))))
-   `(org-table-header              ((,class (:foreground ,fg :weight bold))))
+   `(org-table-header              ((,class (:foreground ,fg :inherit (bold)))))
    `(org-tag                       ((,class (:foreground ,cs01))))
    `(org-tag-group                 ((,class (:foreground ,cs01))))
    `(org-target                    ((,class (:foreground ,ha00))))
@@ -509,7 +509,7 @@
    `(git-gutter-fr:modified ((,class (:background ,ha04))))
 
 ;;;;;; company
-   `(company-tooltip-selection  ((,class (:foreground ,fg :underline (:color ,bw07) :weight semibold))))
+   `(company-tooltip-selection  ((,class (:foreground ,fg :underline (:color ,bw07) :inherit (semibold)))))
    `(company-tooltip-common     ((,class (:foreground ,fg))))
    `(company-tooltip-annotation ((,class (:foreground ,ha02))))
    `(company-tooltip            ((,class (:foreground ,fg :background ,ha09 :box (:color ,bw01)))))
@@ -540,7 +540,7 @@
    `(elfeed-log-error-level-face     ((,class (:foreground ,ot09))))
    `(elfeed-search-last-update-face  ((,class (:foreground ,fg :background ,ha06 :inherit variable-pitch))))
    `(elfeed-search-unread-count-face ((,class (:foreground ,fg :background ,ot09 :inherit variable-pitch))))
-   `(elfeed-search-unread-title-face ((,class (:weight semibold))))
+   `(elfeed-search-unread-title-face ((,class (:inherit (semibold)))))
 
    `(sculpture-themes-dark-elfeed-title-1   ((,class (:inherit sculpture-themes-dark-head-outline-1))))
    `(sculpture-themes-dark-elfeed-title-2   ((,class (:inherit sculpture-themes-dark-head-outline-2))))
@@ -567,7 +567,7 @@
    `(magit-hash                   ((,class (:foreground ,cs01))))
    `(magit-branch-local           ((,class (:foreground ,cs01 :background ,ot05 :inherit variable-pitch))))
    `(magit-branch-remote          ((,class (:foreground ,bg :background ,ot12 :inherit variable-pitch))))
-   `(magit-diff-file-heading      ((,class (:foreground ,fg :weight bold :inherit variable-pitch))))
+   `(magit-diff-file-heading      ((,class (:foreground ,fg :inherit (bold variable-pitch)))))
    `(magit-diff-removed-highlight ((,class (:foreground ,cs01 :background ,ot03))))
    `(magit-diff-added-highlight   ((,class (:foreground ,bg :background ,ot02))))
    `(magit-diff-removed           ((,class (:foreground ,cs01 :background ,cs00))))
@@ -582,10 +582,10 @@
    `(magit-blame-highlight        ((,class (:inherit head-outline-3 :background ,bw03))))
 
 ;;;;;; orderless
-   `(orderless-match-face-0 ((,class (:inherit sculpture-themes-dark-head-outline-2 :weight bold))))
-   `(orderless-match-face-1 ((,class (:inherit sculpture-themes-dark-head-outline-4 :weight bold))))
-   `(orderless-match-face-2 ((,class (:inherit sculpture-themes-dark-head-outline-5 :weight bold))))
-   `(orderless-match-face-3 ((,class (:inherit sculpture-themes-dark-head-outline-3 :weight bold))))
+   `(orderless-match-face-0 ((,class (:inherit (sculpture-themes-dark-head-outline-2 bold)))))
+   `(orderless-match-face-1 ((,class (:inherit (sculpture-themes-dark-head-outline-4 bold)))))
+   `(orderless-match-face-2 ((,class (:inherit (sculpture-themes-dark-head-outline-5 bold)))))
+   `(orderless-match-face-3 ((,class (:inherit (sculpture-themes-dark-head-outline-3 bold)))))
 
 ;;;;;; ediff
    `(ediff-odd-diff-Ancestor ((,class (:background ,ot06))))
@@ -598,7 +598,7 @@
    `(ediff-even-diff-A ((,class (:background ,ot06))))
 
 ;;;;;; vertico
-   `(vertico-current     ((,class (:underline (:line-width -1 :color ,ot04) :weight bold))))
+   `(vertico-current     ((,class (:underline (:line-width -1 :color ,ot04) :inherit (bold)))))
    `(vertico-group-title ((,class (:inherit (sculpture-themes-dark-head-outline-7 variable-pitch)))))
 
 ;;;;;; olivetti
@@ -660,10 +660,10 @@
    `(writegood-passive-voice-face ((,class (:underline (:line-width -1 :color ,ot08)))))
 
 ;;;;;; eglot
-   `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit bold))))
+   `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit (bold)))))
 
 ;;;;;; lsp-mode
-   `(lsp-ui-peek-list ((,class :background ,bg)))))
+   `(lsp-ui-peek-list ((,class :background ,bw01)))))
 
 (provide-theme 'sculpture-themes-dark)
 
