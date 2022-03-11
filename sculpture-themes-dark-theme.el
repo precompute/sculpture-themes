@@ -5,8 +5,8 @@
 ;; Author: t-e-r-m <newenewen@tutanota.com>
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: September 22, 2021
-;; Version: 1.2.3
+;; Modified: March 7, 2022
+;; Version: 1.3.0
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -127,9 +127,7 @@
       (ot16 "#5F1416")
       (ot17 "#2E2C0A")
       (ot18 "#96A880")
-      (ot19 "#F61E2F")
-      (ot20 "#6F5939")
-      )
+      (ot19 "#F61E2F"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
