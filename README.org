@@ -31,6 +31,32 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 
 [[images/sculpture-light.jpg]]
 
+[[images/sculpture-general.jpg]]
+
+[[images/sculpture-light-general.jpg]]
+
+[[images/sculpture-org.jpg]]
+
+[[images/sculpture-light-org.jpg]]
+
+[[images/sculpture-org-mixed-pitch.jpg]]
+
+[[images/sculpture-light-org-mixed-pitch.jpg]]
+
+[[images/sculpture-org-overview.jpg]]
+
+[[images/sculpture-light-org-overview.jpg]]
+
+[[images/sculpture-org-overview-mixed-pitch.jpg]]
+
+[[images/sculpture-light-org-overview-mixed-pitch.jpg]]
+
+[[images/sculpture-search.jpg]]
+
+[[images/sculpture-light-search.jpg]]
+
+These screenshots use the mode-line colors from the themes.
+
 ** Supported Modes
 
 + default emacs faces
@@ -67,3 +93,5 @@ Sculpture's dark version, but with the foreground and background switched.  Two 
 + vertico
 + workspace
 + A few custom faces for modeline, org, etc.
+
+Feel free to open an Issue for new faces / modes.
