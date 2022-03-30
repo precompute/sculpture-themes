@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: March 7, 2022
-;; Version: 1.3.0
+;; Version: 1.3.1
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -191,13 +191,13 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,cs01))))
 
 ;;;;;; Header line and mode line
-   `(header-line                ((,class (:foreground ,fg   :background ,bw00))))
-   `(header-line-highlight      ((,class (:foreground ,fg   :background ,bw00))))
    `(mode-line                  ((,class (:foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,bw04)))))
    `(mode-line-buffer-id        ((,class (:foreground ,ot05 :background ,bw00))))
    `(mode-line-emphasis         ((,class (:foreground ,ha05 :background ,bw00))))
    `(mode-line-highlight        ((,class (:foreground ,ha05 :background ,bw00))))
    `(mode-line-inactive         ((,class (:foreground ,bw08 :background ,bw00 :box (:line-width 1 :color ,bw00)))))
+   `(header-line                ((,class (:inherit mode-line))))
+   `(header-line-highlight      ((,class (:inherit mode-line-highlight))))
 
 ;;;;;;; custom
    `(sculpture-themes-dark-modeline-line                     ((,class (:inherit (cursor variable-pitch) :foreground ,bg))))
