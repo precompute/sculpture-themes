@@ -661,7 +661,10 @@
    `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit (bold)))))
 
 ;;;;;; lsp-mode
-   `(lsp-ui-peek-list ((,class :background ,bw01)))))
+   `(lsp-ui-peek-list ((,class :background ,bw01)))
+
+;;;;;; pulsar
+   `(pulsar-generic ((:inherit highlight)))))
 
 (provide-theme 'sculpture-themes-dark)
 

@@ -645,7 +645,10 @@
    `(highlight-indentation-face                ((,class (:background ,bw13))))
    `(highlight-indentation-guides-odd-face     ((,class (:inherit highlight-indentation-face))))
    `(highlight-indentation-guides-even-face    ((,class (:inherit highlight-indentation-face))))
-   `(highlight-indentation-current-column-face ((,class (:background ,bw14))))))
+   `(highlight-indentation-current-column-face ((,class (:background ,bw14))))
+
+;;;;;; pulsar
+   `(pulsar-generic ((:inherit highlight)))))
 
 (provide-theme 'sculpture-themes-light)
 
