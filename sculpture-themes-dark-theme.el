@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: March 7, 2022
-;; Version: 1.3.1
+;; Version: 1.3.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -670,33 +670,33 @@
    `(lsp-face-semhl-number   ((,class :inherit (font-lock-constant-face))))
    `(lsp-face-semhl-constant ((,class :inherit (font-lock-constant-face))))
 
-   `(lsp-face-semhl-regexp ((,class :inherit (font-lock-string-face))))
+   `(lsp-face-semhl-regexp ((,class :inherit (font-lock-string-face bold))))
    `(lsp-face-semhl-string ((,class :inherit (font-lock-string-face))))
 
    `(lsp-face-semhl-enum           ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-type           ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-class          ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-struct         ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-interface      ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-namespace      ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-type-parameter ((,class :inherit (font-lock-keyword-face))))
+   `(lsp-face-semhl-type           ((,class :inherit (font-lock-keyword-face underline))))
+   `(lsp-face-semhl-class          ((,class :inherit (font-lock-keyword-face underline italic))))
+   `(lsp-face-semhl-struct         ((,class :inherit (font-lock-keyword-face italic))))
+   `(lsp-face-semhl-interface      ((,class :inherit (font-lock-keyword-face bold-italic))))
+   `(lsp-face-semhl-namespace      ((,class :inherit (font-lock-keyword-face bold-italic underline))))
+   `(lsp-face-semhl-type-parameter ((,class :inherit (font-lock-keyword-face bold underline))))
 
-   `(lsp-face-semhl-event     ((,class :inherit (font-lock-variable-name-face))))
-   `(lsp-face-semhl-member    ((,class :inherit (font-lock-variable-name-face))))
-   `(lsp-face-semhl-property  ((,class :inherit (font-lock-variable-name-face))))
-   `(lsp-face-semhl-variable  ((,class :inherit (font-lock-variable-name-face))))
-   `(lsp-face-semhl-parameter ((,class :inherit (font-lock-variable-name-face))))
+   `(lsp-face-semhl-event     ((,class :inherit (font-lock-variable-name-face underline))))
+   `(lsp-face-semhl-member    ((,class :inherit (font-lock-variable-name-face bold-italic))))
+   `(lsp-face-semhl-property  ((,class :inherit (font-lock-variable-name-face italic))))
+   `(lsp-face-semhl-variable  ((,class :inherit (font-lock-variable-name-face bold))))
+   `(lsp-face-semhl-parameter ((,class :inherit (font-lock-variable-name-face underline italic))))
 
-   `(lsp-face-semhl-label   ((,class :inherit (font-lock-comment-face))))
+   `(lsp-face-semhl-label   ((,class :inherit (font-lock-comment-face underline))))
    `(lsp-face-semhl-comment ((,class :inherit (font-lock-comment-face))))
 
-   `(lsp-face-semhl-method     ((,class :inherit (font-lock-function-name-face))))
-   `(lsp-face-semhl-function   ((,class :inherit (font-lock-function-name-face))))
-   `(lsp-face-semhl-operator   ((,class :inherit (font-lock-function-name-face))))
-   `(lsp-face-semhl-definition ((,class :inherit (font-lock-function-name-face))))
+   `(lsp-face-semhl-method     ((,class :inherit (font-lock-function-name-face italic))))
+   `(lsp-face-semhl-function   ((,class :inherit (font-lock-function-name-face underline bold))))
+   `(lsp-face-semhl-operator   ((,class :inherit (font-lock-function-name-face bold-italic))))
+   `(lsp-face-semhl-definition ((,class :inherit (font-lock-function-name-face bold))))
 
-   `(lsp-face-semhl-static  ((,class :inherit (font-lock-keyword-face))))
-   `(lsp-face-semhl-keyword ((,class :inherit (font-lock-keyword-face))))
+   `(lsp-face-semhl-static  ((,class :inherit (font-lock-keyword-face underline))))
+   `(lsp-face-semhl-keyword ((,class :inherit (font-lock-keyword-face bold))))
 
    `(lsp-face-semhl-default-library ((,class :inherit (font-lock-builtin-face) :underline (:line-width -1 :color ,ot05))))
 
