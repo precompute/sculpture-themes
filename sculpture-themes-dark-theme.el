@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: March 7, 2022
-;; Version: 1.4.2
+;; Version: 1.4.3
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -661,9 +661,9 @@
    `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit (bold)))))
 
 ;;;;;; lsp-mode
-   `(lsp-ui-peek-list ((,class :background ,bw02)))
+   `(lsp-ui-peek-list ((,class :background ,bw01)))
 
-   `(lsp-face-highlight-write   ((,class :background ,bw02)))
+   `(lsp-face-highlight-write   ((,class :background ,bw01)))
    `(lsp-face-highlight-textual ((,class :inherit (lsp-face-highlight-write))))
    `(lsp-face-highlight-read    ((,class :inherit (lsp-face-highlight-write) :underline (:line-width -1 :color ,cs00))))
 

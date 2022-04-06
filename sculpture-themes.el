@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: March 7, 2022
-;; Version: 1.4.2
+;; Version: 1.4.3
 ;; Package-Requires: ((emacs "26.1"))
 
 ;; sculpture-theme-dark : A dark theme for emacs with vivid colors, inspired by
