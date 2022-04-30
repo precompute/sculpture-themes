@@ -127,7 +127,16 @@
       (ot16 "#5F1416")
       (ot17 "#2E2C0A")
       (ot18 "#96A880")
-      (ot19 "#F61E2F"))
+      (ot19 "#F61E2F")
+      (ot20 "#FD8000")
+      ;; (ot21 "#31666A")
+      ;; (ot22 "#31666A")
+      (ot21 "#31666A")
+      (ot22 "#EEC8B1")
+      (ot23 "#E6B18F")
+      (ot24 "#ED235C")
+      (ot25 "#AD0E3B")
+      )
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -615,7 +624,54 @@
    `(flycheck-posframe-background-face ((,class (:inherit popup-tip-face))))
 
 ;;;;;; tree-sitter
-   `(tree-sitter-hl-face:function.call ((,class (:inherit font-lock-function-name-face))))
+   `(tree-sitter-hl-face:embedded ((,class (:foreground ,bw13))))
+
+   ;; `(tree-sitter-hl-face:type ((,class (:inherit ))))
+   `(tree-sitter-hl-face:type.argument  ((,class (:foreground ,ot11 :inherit underline))))
+   `(tree-sitter-hl-face:type.parameter ((,class (:foreground ,ot15 :inherit underline))))
+   `(tree-sitter-hl-face:type.builtin   ((,class (:foreground ,ot17 :inherit underline))))
+   `(tree-sitter-hl-face:type.super     ((,class (:foreground ,ot18 :inherit underline))))
+
+   `(tree-sitter-hl-face:punctuation ((,class (:foreground ,ot21))))
+   ;; `(tree-sitter-hl-face:punctuation.delimiter ((,class (:inherit ,ot22))))
+   ;; `(tree-sitter-hl-face:punctuation.bracket ((,class (:inherit ,ot23))))
+   ;; `(tree-sitter-hl-face:punctuation.special ((,class (:inherit ))))
+
+   `(tree-sitter-hl-face:attribute ((,class (:foreground ,ot20))))
+   ;; `(tree-sitter-hl-face:comment ((,class (:inherit ))))
+
+   ;; `(tree-sitter-hl-face:constant.builtin ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:constant ((,class (:inherit ))))
+
+   ;; `(tree-sitter-hl-face:constructor ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:doc ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:escape ((,class (:inherit ))))
+
+   `(tree-sitter-hl-face:method           ((,class (:foreground ,ha12))))
+   `(tree-sitter-hl-face:function         ((,class (:inherit font-lock-function-name-face))))
+   `(tree-sitter-hl-face:function.call    ((,class (:foreground ,ot25))))
+   `(tree-sitter-hl-face:function.macro   ((,class (:inherit font-lock-preprocessor-face))))
+   `(tree-sitter-hl-face:function.builtin ((,class (:foreground ,ot24))))
+   `(tree-sitter-hl-face:function.special ((,class (:foreground ,ot19))))
+
+   ;; `(tree-sitter-hl-face:keyword ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:label ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:method.call ((,class (:inherit ))))
+   `(tree-sitter-hl-face:number ((,class (:inherit highlight-numbers-number))))
+   ;; `(tree-sitter-hl-face:operator ((,class (:inherit ))))
+
+   ;; `(tree-sitter-hl-face:property ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:property.definition ((,class (:inherit ))))
+
+   ;; `(tree-sitter-hl-face:string ((,class (:inherit ))))
+   ;; `(tree-sitter-hl-face:string.special ((,class (:inherit ))))
+
+   ;; `(tree-sitter-hl-face:tag ((,class (:inherit ))))
+
+   `(tree-sitter-hl-face:variable           ((,class (:inherit font-lock-variable-name-face))))
+   `(tree-sitter-hl-face:variable.builtin   ((,class (:foreground ,ot22))))
+   `(tree-sitter-hl-face:variable.parameter ((,class (:foreground ,ot23))))
+   `(tree-sitter-hl-face:variable.special   ((,class (:foreground ,ot23))))
 
 ;;;;;; tabs
    `(tab-line                   ((,class (:inherit mode-line))))
