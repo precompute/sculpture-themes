@@ -626,7 +626,7 @@
 ;;;;;; tree-sitter
    `(tree-sitter-hl-face:embedded ((,class (:foreground ,bw13))))
 
-   ;; `(tree-sitter-hl-face:type ((,class (:inherit ))))
+   `(tree-sitter-hl-face:type ((,class (:inherit (font-lock-type-face underline)))))
    `(tree-sitter-hl-face:type.argument  ((,class (:foreground ,ot11 :inherit underline))))
    `(tree-sitter-hl-face:type.parameter ((,class (:foreground ,ot15 :inherit underline))))
    `(tree-sitter-hl-face:type.builtin   ((,class (:foreground ,ot17 :inherit underline))))
