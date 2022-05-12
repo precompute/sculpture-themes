@@ -13,17 +13,17 @@
 
 A Vivid theme for Emacs, inspired by the colors attributed to Greco-Roman Sculptures.
 
-[[images/swatch1.gif]]
+[[./images/swatch1.gif]]
 
 Monospace fonts are boring -- use variable pitch when it doesn't break indentation / flow.
 
-[[images/swatch2.gif]]
+[[./images/swatch2.gif]]
 
 Readability is second to following a theme.  Being striking is better than being bland and useful, because attention span on dense text improves with colors (complexity decreases with categorization).
 
-[[images/swatch3.gif]]
+[[./images/swatch3.gif]]
 
-[[images/swatch4.png]]
+[[./images/swatch4.png]]
 
 ** Sculpture
 
