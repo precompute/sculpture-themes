@@ -419,7 +419,7 @@
    `(org-document-info-keyword     ((,class (:foreground ,fg :background ,ha01 :height 1.2))))
    `(org-document-title            ((,class (:foreground ,fg :background ,ha01 :height 1.9))))
    `(org-done                      ((,class (:underline (:color ,ot02 :line-width -1)))))
-   `(org-drawer                    ((,class (:foreground ,ha00))))
+   `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,ha10 :background ,cs02))))
    `(org-ellipsis                  ((,class (:foreground ,ha00))))
    `(org-footnote                  ((,class (:foreground ,ha00))))
    `(org-formula                   ((,class (:foreground ,ha00))))
