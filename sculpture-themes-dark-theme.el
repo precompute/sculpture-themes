@@ -155,7 +155,7 @@
    `(window-divider-first-pixel ((,class (:foreground ,bw02))))
    `(window-divider-last-pixel  ((,class (:foreground ,bw02))))
    `(hl-line                    ((,class (:background ,ot06))))
-   `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width -1 :color ,bw06)))))
+   `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width 2 :color ,bw06 :style released-button)))))
 
    `(default              ((,class (:foreground ,fg :background ,bg))))
    `(error                ((,class (:foreground ,cs00))))
@@ -342,11 +342,11 @@
    `(+workspace-tab-selected-face ((,class (:inherit variable-pitch :foreground ,ha04 :background ,ot05))))
 
 ;;;;;; +org-todo, custom
-   `(+org-todo-cancel  ((,class (:inherit fixed-pitch :underline (:color ,cs00 :line-width -1)))))
-   `(+org-todo-done    ((,class (:inherit fixed-pitch :underline (:color ,ot01 :line-width -1)))))
-   `(+org-todo-onhold  ((,class (:inherit fixed-pitch :underline (:color ,ha04 :line-width -1)))))
-   `(+org-todo-active  ((,class (:inherit fixed-pitch :underline (:color ,ha01 :line-width -1)))))
-   `(+org-todo-project ((,class (:inherit fixed-pitch :underline (:color ,ot00 :line-width -1)))))
+   `(+org-todo-cancel  ((,class (:inherit (bold fixed-pitch) :underline (:color ,cs00 :line-width -1)))))
+   `(+org-todo-done    ((,class (:inherit (bold fixed-pitch) :underline (:color ,ot01 :line-width -1)))))
+   `(+org-todo-onhold  ((,class (:inherit (bold fixed-pitch) :underline (:color ,ha04 :line-width -1)))))
+   `(+org-todo-active  ((,class (:inherit (bold fixed-pitch) :underline (:color ,ha01 :line-width -1)))))
+   `(+org-todo-project ((,class (:inherit (bold fixed-pitch) :underline (:color ,ot00 :line-width -1)))))
 
 ;;;;;; ido
    `(ido-subdir            ((,class (:foreground ,bw13))))
@@ -419,7 +419,8 @@
    `(org-document-info-keyword     ((,class (:foreground ,fg :background ,ha01 :height 1.2))))
    `(org-document-title            ((,class (:foreground ,fg :background ,ha01 :height 1.9))))
    `(org-done                      ((,class (:underline (:color ,ot02 :line-width -1)))))
-   `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,ha10 :background ,cs02))))
+   ;; `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,ha10 :background ,cs02))))
+   `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,cs02 :background ,bw01 :box (:line-width 2 :style pressed-button)))))
    `(org-ellipsis                  ((,class (:foreground ,ha00))))
    `(org-footnote                  ((,class (:foreground ,ha00))))
    `(org-formula                   ((,class (:foreground ,ha00))))
@@ -447,7 +448,7 @@
    `(org-tag-group                 ((,class (:foreground ,cs01))))
    `(org-target                    ((,class (:foreground ,ha00))))
    `(org-time-grid                 ((,class (:foreground ,ha00))))
-   `(org-todo                      ((,class (:inherit fixed-pitch :underline (:color ,ot09 :line-width -1)))))
+   `(org-todo                      ((,class (:inherit (bold fixed-pitch) :underline (:color ,ot09 :line-width -1)))))
    `(org-upcoming-deadline         ((,class (:foreground ,ha00))))
    `(org-upcoming-distant-deadline ((,class (:foreground ,ha00))))
    `(org-verbatim                  ((,class (:foreground ,cs02 :background ,ot06))))
