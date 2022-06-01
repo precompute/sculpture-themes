@@ -179,7 +179,7 @@
    `(font-lock-constant-face             ((,class (:foreground ,ha04))))
    `(font-lock-function-name-face        ((,class (:foreground ,ot09))))
    `(font-lock-keyword-face              ((,class (:foreground ,ot04 :inherit (bold)))))
-   `(font-lock-string-face               ((,class (:foreground ,ha00))))
+   `(font-lock-string-face               ((,class (:foreground ,ha00 :background ,bg))))
    `(font-lock-type-face                 ((,class (:foreground ,ha07))))
    `(font-lock-variable-name-face        ((,class (:foreground ,cs01))))
    `(font-lock-doc-face                  ((,class (:foreground ,ot19))))
