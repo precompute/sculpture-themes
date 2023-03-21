@@ -691,6 +691,9 @@
    ;; `(lsp-face-semhl-deprecated ((,class :inherit )))
    ;; `(lsp-face-rename ((,class :inherit )))
 
+;;;;;; rjsx
+   `(rjsx-tag-bracket-face ((,class :inherit font-lock-keyword-face)))
+
 ;;;;;; pulsar
    `(pulsar-generic ((:inherit highlight)))))
 
