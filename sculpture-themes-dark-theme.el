@@ -520,12 +520,12 @@
    `(git-gutter-fr:modified ((,class (:background ,ha04))))
 
 ;;;;;; diff-hl
-   `(diff-hl-insert ((,class (:inherit git-gutter-fr:added))))
-   `(diff-hl-delete ((,class (:inherit git-gutter-fr:deleted))))
-   `(diff-hl-change ((,class (:inherit git-gutter-fr:modified))))
-   `(diff-hl-dired-insert ((,class (:inherit diff-hl-insert))))
-   `(diff-hl-dired-change ((,class (:inherit diff-hl-delete))))
-   `(diff-hl-dired-delete ((,class (:inherit diff-hl-change))))
+   `(diff-hl-insert ((,class (:foreground ,ot04))))
+   `(diff-hl-delete ((,class (:foreground ,cs00))))
+   `(diff-hl-change ((,class (:foreground ,ha04))))
+   `(diff-hl-dired-insert ((,class (:foreground ,ot04))))
+   `(diff-hl-dired-change ((,class (:foreground ,cs00))))
+   `(diff-hl-dired-delete ((,class (:foreground ,ha04))))
    ;; `(diff-hl-dired-ignored ((,class (:inherit ))))
    ;; `(diff-hl-dired-unknown ((,class (:inherit ))))
    ;; `(diff-hl-reverted-hunk-highlight ((,class (:inherit ))))
