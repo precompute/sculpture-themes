@@ -137,6 +137,7 @@
       (ot24 "#ED235C")
       (ot25 "#AD0E3B")
       (ot26 "#1C1C0D")
+      (ot27 "#0A0A04")
       )
 ;;;;; definitions
 ;;;;;; base
@@ -500,7 +501,7 @@
    `(org-level-8 ((,class (:inherit sculpture-themes-dark-head-outline-8))))
 
 ;;;;;; paren
-   `(show-paren-match            ((,class (:underline (:color ,ha02 :line-width -1)))))
+   `(show-paren-match            ((,class (:background ,ot27))))
    `(show-paren-mismatch         ((,class (:underline (:color ,ha11 :line-width -1)))))
    `(show-paren-match-expression ((,class (:underline (:color ,ot06 :line-width -1)))))
 
