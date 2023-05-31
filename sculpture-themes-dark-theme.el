@@ -166,7 +166,7 @@
    `(menu                 ((,class (:foreground ,fg :background ,bg))))
    `(minibuffer-prompt    ((,class (:foreground ,fg :slant italic))))
    `(read-multiple-choice ((,class (:foreground ,fg :slant italic))))
-   `(region               ((,class (:background ,ot26 :box (:color ,cs02)))))
+   `(region               ((,class (:background ,ot26))))
    ;; `(region               ((,class (:background ,bw02))))
    `(secondary-selection  ((,class (:background ,ot13))))
    `(shadow               ((,class (:foreground ,bw11))))
