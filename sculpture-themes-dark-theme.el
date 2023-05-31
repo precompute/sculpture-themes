@@ -182,6 +182,10 @@
    `(whitespace-tab       ((,class (:foreground ,ot00 :background ,ot06))))
    `(escape-glyph         ((,class (:foreground ,ot07))))
 
+   `(window-divider             ((,class (:foreground ,bg))))
+   `(window-divider-last-pixel  ((,class (:foreground ,bg))))
+   `(window-divider-first-pixel ((,class (:foreground ,bg))))
+
    `(highlight-numbers-number ((,class (:foreground ,ot18))))
    `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
    `(highlight-quoted-quote   ((,class (:foreground ,ot01))))
