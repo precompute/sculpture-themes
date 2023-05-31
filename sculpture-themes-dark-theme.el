@@ -203,13 +203,13 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,cs01))))
 
 ;;;;;; Header line and mode line
-   `(mode-line                  ((,class (:foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,bw04)))))
-   `(mode-line-buffer-id        ((,class (:foreground ,ot05 :background ,bw00))))
-   `(mode-line-emphasis         ((,class (:foreground ,ha05 :background ,bw00))))
-   `(mode-line-highlight        ((,class (:foreground ,ha05 :background ,bw00))))
-   `(mode-line-inactive         ((,class (:foreground ,bw08 :background ,bw00 :box (:line-width 1 :color ,bw00)))))
-   `(header-line                ((,class (:inherit mode-line))))
-   `(header-line-highlight      ((,class (:inherit mode-line-highlight))))
+   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,bw04)))))
+   `(mode-line-buffer-id        ((,class (:inherit variable-pitch :foreground ,ot05 :background ,bw00))))
+   `(mode-line-emphasis         ((,class (:inherit variable-pitch :foreground ,ha05 :background ,bw00))))
+   `(mode-line-highlight        ((,class (:inherit variable-pitch :foreground ,ha05 :background ,bw00))))
+   `(mode-line-inactive         ((,class (:inherit variable-pitch :foreground ,bw08 :background ,bw00 :box (:line-width 1 :color ,bw00)))))
+   `(header-line                ((,class (:inherit (variable-pitch mode-line)))))
+   `(header-line-highlight      ((,class (:inherit (variable-pitch mode-line-highlight)))))
 
 ;;;;;;; custom
    `(sculpture-themes-dark-modeline-line                     ((,class (:inherit (cursor variable-pitch) :foreground ,bg))))
@@ -501,9 +501,9 @@
    `(org-level-8 ((,class (:inherit sculpture-themes-dark-head-outline-8))))
 
 ;;;;;; paren
-   `(show-paren-match            ((,class (:background ,ot27))))
+   `(show-paren-match            ((,class (:underline (:color ,ha02 :line-width -1)))))
    `(show-paren-mismatch         ((,class (:underline (:color ,ha11 :line-width -1)))))
-   `(show-paren-match-expression ((,class (:underline (:color ,ot06 :line-width -1)))))
+   `(show-paren-match-expression ((,class (:background ,ot27))))
 
 ;;;;;; shr
    `(shr-link ((,class (:inherit org-link))))
@@ -520,12 +520,12 @@
    `(git-gutter-fr:modified ((,class (:background ,ha04))))
 
 ;;;;;; diff-hl
-   `(diff-hl-insert ((,class (:foreground ,ot04))))
-   `(diff-hl-delete ((,class (:foreground ,cs00))))
-   `(diff-hl-change ((,class (:foreground ,ha04))))
-   `(diff-hl-dired-insert ((,class (:foreground ,ot04))))
-   `(diff-hl-dired-change ((,class (:foreground ,cs00))))
-   `(diff-hl-dired-delete ((,class (:foreground ,ha04))))
+   `(diff-hl-insert ((,class (:background ,ot04 :foreground ,ot04))))
+   `(diff-hl-delete ((,class (:background ,cs00 :foreground ,cs00))))
+   `(diff-hl-change ((,class (:background ,ha04 :foreground ,ha04))))
+   `(diff-hl-dired-insert ((,class (:background ,ot04 :foreground ,ot04))))
+   `(diff-hl-dired-change ((,class (:background ,cs00 :foreground ,cs00))))
+   `(diff-hl-dired-delete ((,class (:background ,ha04 :foreground ,ha04))))
    ;; `(diff-hl-dired-ignored ((,class (:inherit ))))
    ;; `(diff-hl-dired-unknown ((,class (:inherit ))))
    ;; `(diff-hl-reverted-hunk-highlight ((,class (:inherit ))))
