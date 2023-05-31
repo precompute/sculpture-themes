@@ -53,6 +53,8 @@
 (defface sculpture-themes-dark-head-outline-8        nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-modeline-percent      nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-modeline-line         nil nil :group 'sculpture-themes-dark)
+(defface sculpture-themes-dark-modeline-percent-i    nil nil :group 'sculpture-themes-dark)
+(defface sculpture-themes-dark-modeline-line-i       nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-modeline-mode         nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-modeline-workspace    nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-variable-pitch-italic nil nil :group 'sculpture-themes-dark)
@@ -65,6 +67,10 @@
 (defface sculpture-themes-dark-elfeed-title-7        nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-elfeed-title-8        nil nil :group 'sculpture-themes-dark)
 (defface sculpture-themes-dark-elfeed-star-face      nil nil :group 'sculpture-themes-dark)
+(defface doom-modeline-buffer-active                 nil nil :group 'sculpture-themes-dark)
+(defface doom-modeline-buffer-modified               nil nil :group 'sculpture-themes-dark)
+(defface doom-modeline-buffer-active-i               nil nil :group 'sculpture-themes-dark)
+(defface doom-modeline-buffer-modified-i             nil nil :group 'sculpture-themes-dark)
 
 ;;;; definition
 (deftheme sculpture-themes-dark
@@ -210,14 +216,23 @@
    `(mode-line-inactive         ((,class (:inherit variable-pitch :foreground ,bw08 :background ,bw00 :box (:line-width 1 :color ,bw00)))))
    `(header-line                ((,class (:inherit (variable-pitch mode-line)))))
    `(header-line-highlight      ((,class (:inherit (variable-pitch mode-line-highlight)))))
+;;;;;;; doom-modeline
+   `(doom-modeline-bar           ((,class (:background ,ot04))))
+   ;; `(doom-modeline-bar-inactive  ((,class (:inherit (variable-pitch mode-line-highlight)))))
 
 ;;;;;;; custom
-   `(sculpture-themes-dark-modeline-line                     ((,class (:inherit (cursor variable-pitch) :foreground ,bg))))
-   `(sculpture-themes-dark-modeline-percent                  ((,class (:inherit (cursor variable-pitch) :foreground ,fg :background ,ot03))))
+   `(sculpture-themes-dark-modeline-line                     ((,class (:inherit (bold variable-pitch) :foreground ,bg :background ,cs02))))
+   `(sculpture-themes-dark-modeline-line-i                   ((,class (:inherit (bold variable-pitch) :foreground ,cs02 :background ,bg))))
+   `(sculpture-themes-dark-modeline-percent                  ((,class (:inherit (bold cursor variable-pitch) :foreground ,fg :background ,ot03))))
+   `(sculpture-themes-dark-modeline-percent-i                ((,class (:inherit (bold cursor variable-pitch) :foreground ,ot03 :background ,bg))))
    `(sculpture-themes-dark-modeline-mode                     ((,class (:inherit variable-pitch :foreground ,ot05 :weight bold))))
    `(sculpture-themes-dark-modeline-workspace                ((,class (:inherit variable-pitch :foreground ,cs02))))
-   `(doom-modeline-highlight           ((,class (:inherit (bold variable-pitch) :foreground ,ot04))))
+   `(doom-modeline-highlight           ((,class (:foreground ,ot04))))
    `(doom-modeline-alternate-highlight ((,class (:inherit variable-pitch :foreground ,cs02))))
+   `(doom-modeline-buffer-active     ((,class (:inherit (bold variable-pitch) :background ,ot04 :foreground ,bg))))
+   `(doom-modeline-buffer-modified   ((,class (:inherit (bold variable-pitch) :background ,ot16 :foreground ,bg))))
+   `(doom-modeline-buffer-active-i   ((,class (:inherit (bold variable-pitch) :foreground ,ot04 :background ,bg))))
+   `(doom-modeline-buffer-modified-i ((,class (:inherit (bold variable-pitch) :foreground ,ot16 :background ,bg))))
 
 ;;;;;; Info mode
    `(Info-quoted       ((,class (:foreground ,ha02 :background ,bg))))
