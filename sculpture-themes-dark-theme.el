@@ -203,7 +203,7 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,cs01))))
 
 ;;;;;; Header line and mode line
-   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,bw04)))))
+   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00))))
    `(mode-line-buffer-id        ((,class (:inherit variable-pitch :foreground ,ot05 :background ,bw00))))
    `(mode-line-emphasis         ((,class (:inherit variable-pitch :foreground ,ha05 :background ,bw00))))
    `(mode-line-highlight        ((,class (:inherit variable-pitch :foreground ,ha05 :background ,bw00))))
