@@ -143,8 +143,7 @@
       (ot24 "#ED235C")
       (ot25 "#AD0E3B")
       (ot26 "#1C1C0D")
-      (ot27 "#0A0A04")
-      )
+      (ot27 "#0A0A04"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -159,9 +158,9 @@
    `(sculpture-themes-dark-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
    `(fringe                     ((,class (:background ,bg))))
    `(vertical-border            ((,class (:foreground ,bw03))))
-   `(window-divider             ((,class (:foreground ,bw01))))
-   `(window-divider-first-pixel ((,class (:foreground ,bw02))))
-   `(window-divider-last-pixel  ((,class (:foreground ,bw02))))
+   `(window-divider             ((,class (:foreground ,bg))))
+   `(window-divider-first-pixel ((,class (:foreground ,bg))))
+   `(window-divider-last-pixel  ((,class (:foreground ,bg))))
    `(hl-line                    ((,class (:background ,ot06))))
    `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width 2 :color ,bw06 :style released-button)))))
 
@@ -181,10 +180,6 @@
    `(cursor               ((,class (:background ,cs02))))
    `(whitespace-tab       ((,class (:foreground ,ot00 :background ,ot06))))
    `(escape-glyph         ((,class (:foreground ,ot07))))
-
-   `(window-divider             ((,class (:foreground ,bg))))
-   `(window-divider-last-pixel  ((,class (:foreground ,bg))))
-   `(window-divider-first-pixel ((,class (:foreground ,bg))))
 
    `(highlight-numbers-number ((,class (:foreground ,ot18))))
    `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
