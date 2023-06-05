@@ -796,7 +796,16 @@
    `(web-mode-html-tag-bracket-face ((,class :inherit font-lock-keyword-face)))
 
 ;;;;;; pulsar
-   `(pulsar-generic ((:inherit highlight)))))
+   ;; `(pulsar-generic ((:inherit highlight)))))
+
+;;;;;; corfu
+   ;; `(corfu-deprecated ((,class (:background ,bw02))))
+   ;; `(corfu-annotations ((,class (:background ,bw02))))
+   `(corfu-bar ((,class (:background ,fg))))
+   `(corfu-border ((,class (:background ,ot04))))
+   `(corfu-current ((,class (:inherit region))))
+   `(corfu-default ((,class (:background ,bg :foreground ,fg))))
+   `(corfu-popupinfo ((,class (:inherit corfu-default))))))
 
 (provide-theme 'sculpture-themes-dark)
 
