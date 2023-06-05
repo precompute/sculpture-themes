@@ -652,6 +652,18 @@
    `(flycheck-posframe-warning-face    ((,class (:inherit (popup-tip-face variable-pitch flycheck-warning) :foreground ,ot17))))
    `(flycheck-posframe-background-face ((,class (:inherit popup-tip-face))))
 
+;;;;;; flymake
+   `(flymake-note    ((,class (:underline (:line-width -1 :color ,ot15)))))
+   `(flymake-error   ((,class (:underline (:line-width -1 :color ,ot16)))))
+   `(flymake-warning ((,class (:underline (:line-width -1 :color ,ot17)))))
+   `(flymake-note-echo    ((,class (:inherit flymake-note))))
+   `(flymake-error-echo   ((,class (:inherit flymake-error))))
+   `(flymake-warning-echo ((,class (:inherit flymake-warning))))
+   `(flymake-note-echo-at-eol    ((,class (:inherit flymake-note))))
+   `(flymake-error-echo-at-eol   ((,class (:inherit flymake-error))))
+   `(flymake-warning-echo-at-eol ((,class (:inherit flymake-warning))))
+   `(flymake-end-of-line-diagnostics-face ((,class (:inherit region font-lock-keyword-face))))
+
 ;;;;;; tree-sitter
    `(tree-sitter-hl-face:embedded ((,class (:foreground ,bw13))))
 
