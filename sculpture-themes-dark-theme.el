@@ -142,7 +142,12 @@
       (ot25 "#AD0E3B")
       (ot26 "#1C1C0D")
       (ot27 "#0A0A04")
-      (ot28 "#B22744"))
+      (ot28 "#B22744")
+      (ot29 "#3E0F07")
+      (ot30 "#03141E")
+      (ot31 "#7E7400")
+      (ot32 "#1F3603")
+      (ot33 "#1D1B3D"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -828,7 +833,17 @@
    `(corfu-border ((,class (:background ,ot04))))
    `(corfu-current ((,class (:inherit region))))
    `(corfu-default ((,class (:background ,bg :foreground ,fg))))
-   `(corfu-popupinfo ((,class (:inherit corfu-default))))))
+   `(corfu-popupinfo ((,class (:inherit corfu-default))))
+
+;;;;;; evil-goggles
+   `(evil-goggles-join-face                  ((,class (:background ,ot30))))
+   `(evil-goggles-yank-face                  ((,class (:background ,ot31))))
+   `(evil-goggles-paste-face                 ((,class (:background ,ot32))))
+   `(evil-goggles-change-face                ((,class (:background ,ot30))))
+   `(evil-goggles-delete-face                ((,class (:background ,ot29))))
+   `(evil-goggles-surround-face              ((,class (:background ,ot30))))
+   `(evil-goggles-commentary-face            ((,class (:background ,ot33))))
+   `(evil-goggles-nerd-commenter-face        ((,class (:inherit evil-goggles-commentary-face))))))
 
 (provide-theme 'sculpture-themes-dark)
 
