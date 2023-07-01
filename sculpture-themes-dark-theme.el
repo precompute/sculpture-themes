@@ -463,7 +463,7 @@
    `(org-indent                    ((,class (:foreground ,bg))))
    `(org-latex-and-related         ((,class (:foreground ,ha00))))
    `(org-link                      ((,class (:foreground ,ot07 :underline t))))
-   `(org-list-dt                   ((,class (:foreground ,ot05))))
+   `(org-list-dt                   ((,class (:foreground ,ot05 :inherit bold))))
    `(org-macro                     ((,class (:foreground ,ha00))))
    `(org-meta-line                 ((,class (:foreground ,fg :background ,ha11))))
    `(org-mode-line-clock           ((,class (:foreground ,ha00))))
