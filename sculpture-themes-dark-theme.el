@@ -834,6 +834,8 @@
    `(corfu-current ((,class (:inherit region))))
    `(corfu-default ((,class (:background ,bg :foreground ,fg))))
    `(corfu-popupinfo ((,class (:inherit corfu-default))))
+   `(corfu-candidate-overlay-face ((,class (:inherit bold :background ,cs01 :foreground ,bg))))
+   `(corfu-candidate-overlay-face-exact-match ((,class (:inherit (bold underline):background ,cs01 :foreground ,bg))))
 
 ;;;;;; evil-goggles
    `(evil-goggles-join-face                  ((,class (:background ,ot30))))
