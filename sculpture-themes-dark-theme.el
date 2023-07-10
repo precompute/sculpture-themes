@@ -560,6 +560,12 @@
    ;; `(diff-hl-dired-unknown ((,class (:inherit ))))
    ;; `(diff-hl-reverted-hunk-highlight ((,class (:inherit ))))
 
+;;;;;; which-key
+   `(which-key-key-face ((,class (:foreground ,cs01 :weight bold))))
+   `(which-key-group-description-face ((,class (:foreground ,cs02))))
+   `(which-key-command-description-face ((,class (:foreground ,ha04))))
+   `(which-key-separator-face ((,class (:foreground ,bw11 :background ,bg))))
+
 ;;;;;; company
    `(company-tooltip-selection  ((,class (:foreground ,fg :underline (:color ,bw07) :inherit (semibold)))))
    `(company-tooltip-common     ((,class (:foreground ,fg))))
