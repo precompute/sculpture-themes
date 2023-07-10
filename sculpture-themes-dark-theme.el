@@ -658,6 +658,8 @@
 ;;;;;; vertico
    `(vertico-current     ((,class (:underline (:line-width -1 :color ,ot04) :inherit (bold)))))
    `(vertico-group-title ((,class (:inherit (sculpture-themes-dark-head-outline-7 variable-pitch)))))
+   `(vertico-quick1      ((,class (:background ,ot25))))
+   `(vertico-quick2      ((,class (:background ,ot24))))
 
 ;;;;;; olivetti
    `(olivetti-fringe ((,class (:background ,ot14))))
