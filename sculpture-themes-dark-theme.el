@@ -662,7 +662,7 @@
    `(vertico-quick2      ((,class (:background ,ot24))))
 
 ;;;;;; olivetti
-   `(olivetti-fringe ((,class (:background ,ot14))))
+   `(olivetti-fringe ((,class (:background ,bg))))
 
 ;;;;;; flycheck
    `(flycheck-info    ((,class (:underline (:line-width -1 :color ,ot15)))))
