@@ -853,7 +853,16 @@
    `(evil-goggles-delete-face                ((,class (:background ,ot29))))
    `(evil-goggles-surround-face              ((,class (:background ,ot30))))
    `(evil-goggles-commentary-face            ((,class (:background ,ot33))))
-   `(evil-goggles-nerd-commenter-face        ((,class (:inherit evil-goggles-commentary-face))))))
+   `(evil-goggles-nerd-commenter-face        ((,class (:inherit evil-goggles-commentary-face))))
+
+;;;;;; vundo
+   `(vundo-node        ((,class (:foreground ,ot05))))
+   `(vundo-stem        ((,class (:foreground ,ot05))))
+   `(vundo-saved       ((,class (:foreground ,ot04))))
+   `(vundo-default     ((,class (:foreground ,fg))))
+   `(vundo-highlight   ((,class (:foreground ,cs02))))
+   `(vundo-last-saved  ((,class (:foreground ,ot01))))
+   `(vundo-branch-stem ((,class (:foreground ,ot08))))))
 
 (provide-theme 'sculpture-themes-dark)
 
