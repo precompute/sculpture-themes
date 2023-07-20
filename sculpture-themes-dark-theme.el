@@ -189,6 +189,8 @@
    `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
    `(highlight-quoted-quote   ((,class (:foreground ,ot01))))
 
+   `(custom-button         ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style released-button)))))
+   `(custom-button-pressed ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style pressed-button)))))
 ;;;;;; popup
    `(popup-face               ((,class (:inherit (button) :foreground ,ot05))))
    `(popup-menu-face          ((,class (:inherit (popup-face)))))
