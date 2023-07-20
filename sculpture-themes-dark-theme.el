@@ -147,7 +147,8 @@
       (ot30 "#03141E")
       (ot31 "#7E7400")
       (ot32 "#1F3603")
-      (ot33 "#1D1B3D"))
+      (ot33 "#1D1B3D")
+      (ot34 "#071E03"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -460,7 +461,7 @@
    `(org-footnote                  ((,class (:foreground ,ha00))))
    `(org-formula                   ((,class (:foreground ,ha00))))
    `(org-headline-todo             ((,class (:background ,ot30))))
-   `(org-headline-done             ((,class (:background ,ot18))))
+   `(org-headline-done             ((,class (:background ,ot34))))
    `(org-hide                      ((,class (:foreground ,bg))))
    `(org-indent                    ((,class (:foreground ,bg))))
    `(org-latex-and-related         ((,class (:foreground ,ha00))))
