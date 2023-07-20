@@ -456,7 +456,7 @@
    `(org-done                      ((,class (:underline (:color ,ot02 :line-width -1)))))
    ;; `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,ha10 :background ,cs02))))
    `(org-drawer                    ((,class (:inherit fixed-pitch :foreground ,cs02 :background ,bw01 :box (:line-width 2 :style pressed-button)))))
-   `(org-ellipsis                  ((,class (:foreground ,ha00))))
+   `(org-ellipsis                  ((,class (:inherit font-lock-builtin-face))))
    `(org-footnote                  ((,class (:foreground ,ha00))))
    `(org-formula                   ((,class (:foreground ,ha00))))
    `(org-headline-done             nil)
