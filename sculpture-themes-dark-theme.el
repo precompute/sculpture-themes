@@ -762,13 +762,13 @@
 ;;;;;; highlight-indent-guides
    `(highlight-indent-guides-odd-face             ((,class (:foreground ,bw02))))
    `(highlight-indent-guides-even-face            ((,class (:foreground ,bw02))))
-   `(highlight-indent-guides-character-face       ((,class (:foreground ,bw03))))
+   `(highlight-indent-guides-character-face       ((,class (:foreground ,ha09))))
    `(highlight-indent-guides-stack-odd-face       ((,class (:foreground ,bw04))))
    `(highlight-indent-guides-stack-even-face      ((,class (:foreground ,bw04))))
-   `(highlight-indent-guides-stack-character-face ((,class (:foreground ,bw05))))
+   `(highlight-indent-guides-stack-character-face ((,class (:foreground ,ot06))))
    `(highlight-indent-guides-top-odd-face         ((,class (:foreground ,bw08))))
    `(highlight-indent-guides-top-even-face        ((,class (:foreground ,bw08))))
-   `(highlight-indent-guides-top-character-face   ((,class (:foreground ,bw09))))
+   `(highlight-indent-guides-top-character-face   ((,class (:foreground ,cs01))))
 
 ;;;;;; highlight-indentation
    `(highlight-indentation-face                ((,class (:background ,bw02))))
