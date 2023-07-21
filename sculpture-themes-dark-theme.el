@@ -166,6 +166,7 @@
    `(window-divider             ((,class (:foreground ,bg))))
    `(window-divider-first-pixel ((,class (:foreground ,bg))))
    `(window-divider-last-pixel  ((,class (:foreground ,bg))))
+   `(vertical-border            ((,class (:foreground ,bg))))
    `(hl-line                    ((,class (:background ,ot06))))
    `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width 2 :color ,bw06 :style released-button)))))
 
