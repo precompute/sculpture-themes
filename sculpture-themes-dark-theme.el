@@ -378,10 +378,10 @@
    `(+workspace-tab-selected-face ((,class (:inherit variable-pitch :foreground ,ha04 :background ,ot05))))
 
 ;;;;;; xref
-   `(xref-file-header  ((,class (:foreground ,ot24 :weight bold :height 1.15))))
-   `(xref-match        ((,class (:foreground ,ot04))))
+   `(xref-file-header  ((,class (:foreground ,ot24 :weight bold :height 1.15 :inherit variable-pitch))))
+   `(xref-match        ((,class (:underline (:color ,ot04)))))
    `(xref-line-number  ((,class (:foreground ,ot00))))
-   `(info-xref-visited ((,class (:foreground ,ot05))))
+   `(info-xref-visited ((,class (:underline (:color ,ot05)))))
 
 ;;;;;; +org-todo, custom
    `(+org-todo-cancel  ((,class (:inherit (bold fixed-pitch) :underline (:color ,cs00 :line-width -1)))))
