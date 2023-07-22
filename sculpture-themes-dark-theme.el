@@ -85,7 +85,7 @@
       (bw02 "#222222")
       (bw03 "#333333")
       (bw04 "#444444")
-      (bw05 "#555555")
+      ;; (bw05 "#555555")
       (bw06 "#666666")
       (bw07 "#777777")
       (bw08 "#888888")
@@ -376,6 +376,12 @@
 ;;;;;; workspace, doom
    `(+workspace-tab-face          ((,class (:inherit variable-pitch :foreground ,fg))))
    `(+workspace-tab-selected-face ((,class (:inherit variable-pitch :foreground ,ha04 :background ,ot05))))
+
+;;;;;; xref
+   `(xref-file-header  ((,class (:foreground ,ot24 :weight bold :height 1.15))))
+   `(xref-match        ((,class (:foreground ,ot04))))
+   `(xref-line-number  ((,class (:foreground ,ot00))))
+   `(info-xref-visited ((,class (:foreground ,ot05))))
 
 ;;;;;; +org-todo, custom
    `(+org-todo-cancel  ((,class (:inherit (bold fixed-pitch) :underline (:color ,cs00 :line-width -1)))))
