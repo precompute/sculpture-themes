@@ -788,7 +788,7 @@
    `(writegood-passive-voice-face ((,class (:underline (:line-width -1 :color ,ot08)))))
 
 ;;;;;; eglot
-   `(eglot-highlight-symbol-face  ((,class (:underline (:line-width -1 :color ,fg) :inherit (bold)))))
+   `(eglot-highlight-symbol-face  ((,class (:background ,ot33 :inherit (bold)))))
 
 ;;;;;; lsp-mode
    `(lsp-ui-peek-list ((,class :background ,bw01)))
