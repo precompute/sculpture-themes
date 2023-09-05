@@ -446,6 +446,7 @@
    `(markdown-header-face-5 ((,class (:inherit sculpture-themes-dark-head-outline-5))))
    `(markdown-header-face-6 ((,class (:inherit sculpture-themes-dark-head-outline-6))))
    `(markdown-link-face ((,class (:inherit org-link))))
+   `(markdown-code-face ((,class (:inherit font-lock-number-face))))
 
 ;;;;;; org
    `(org-archived                  ((,class (:foreground ,ha00))))
