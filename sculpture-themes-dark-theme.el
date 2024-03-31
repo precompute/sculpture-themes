@@ -85,7 +85,7 @@
       (bw02 "#222222")
       (bw03 "#333333")
       (bw04 "#444444")
-      ;; (bw05 "#555555")
+      (bw05 "#555555")
       (bw06 "#666666")
       (bw07 "#777777")
       (bw08 "#888888")
@@ -269,6 +269,9 @@
 
 ;;;;;; Info mode
    `(helpful-heading ((,class (:inherit variable-pitch :foreground ,ha02 :height 1.1 :underline t))))
+
+;;;;;; Eldoc
+   `(eldoc-highlight-function-argument ((,class (:inherit (bold region)))))
 
 ;;;;;; evil
    `(evil-ex-info                   ((,class (:foreground ,bw13 :slant italic))))
@@ -622,13 +625,19 @@
 
 ;;;;;; transient
    `(transient-unreachable       ((,class (:foreground ,bw04))))
-   `(transient-inactive-value    ((,class (:foreground ,bw04))))
-   `(transient-unreachable-key   ((,class (:foreground ,bw04))))
+   `(transient-inactive-value    ((,class (:foreground ,bw05))))
    `(transient-inactive-argument ((,class (:foreground ,bw04))))
    `(transient-inapt-suffix      ((,class (:foreground ,bw04 :inherit italic))))
    `(transient-heading           ((,class (:foreground ,ot05 :inherit variable-pitch :height 1.2 :overline t :extend t))))
-   `(transient-key               ((,class (:foreground ,ot09 :underline t))))
    `(transient-active-infix      ((,class (:inherit lazy-highlight :underline t))))
+   `(transient-key               ((,class (:foreground ,ha12 :inherit bold))))
+   `(transient-key-exit          ((,class (:foreground ,ot09 :inherit bold))))
+   `(transient-key-noop          ((,class (:foreground ,bw05 :inherit bold))))
+   `(transient-key-stay          ((,class (:foreground ,ot05 :inherit bold))))
+   `(transient-key-return        ((,class (:foreground ,ot01 :inherit bold))))
+   `(transient-mismatched-key    ((,class (:foreground ,ot09 :inherit bold))))
+   `(transient-nonstandard-key   ((,class (:foreground ,cs02 :inherit bold))))
+   `(transient-unreachable-key   ((,class (:foreground ,bw04))))
 
 ;;;;;; magit
    `(magit-section-heading        ((,class (:foreground ,ot01 :inherit variable-pitch :height 1.2))))
