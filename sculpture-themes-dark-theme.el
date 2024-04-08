@@ -640,7 +640,7 @@
    `(transient-unreachable-key   ((,class (:foreground ,bw04))))
 
 ;;;;;; magit
-   `(magit-section-heading        ((,class (:foreground ,ot01 :inherit variable-pitch :height 1.2))))
+   ;; `(magit-section-heading        ((,class (:foreground ,ot01 :inherit variable-pitch :height 1.2))))
    `(magit-hash                   ((,class (:foreground ,cs01))))
    `(magit-branch-local           ((,class (:foreground ,cs01 :background ,ot05 :inherit variable-pitch))))
    `(magit-branch-remote          ((,class (:foreground ,bg :background ,ot12 :inherit variable-pitch))))
