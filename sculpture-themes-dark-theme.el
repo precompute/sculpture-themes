@@ -6,7 +6,7 @@
 ;; URL: https://github.com/t-e-r-m/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: March 7, 2022
-;; Version: 1.4.3
+;; Version: 1.5.0
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
