@@ -1,12 +1,12 @@
 ;;; sculpture-themes-light-theme.el --- Light theme with vivid colors -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: April 24, 2024
-;; Version: 1.5.1
+;; Modified: February 16, 2025
+;; Version: 1.5.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -15,7 +15,7 @@
 ;; sculpture-themes-light : A light theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -424,7 +424,7 @@
    `(org-mode-line-clock           ((,class (:foreground ,ha00))))
    `(org-mode-line-clock-overrun   ((,class (:foreground ,ha00))))
    `(org-priority                  ((,class (:foreground ,ha00))))
-   `(org-property-value            ((,class (:foreground ,ha00))))
+   `(org-property-value            ((,class (:foreground ,ot20 :inherit fixed-pitch))))
    `(org-scheduled                 ((,class (:foreground ,ha00))))
    `(org-scheduled-previously      ((,class (:foreground ,ha00))))
    `(org-scheduled-today           ((,class (:foreground ,ha00))))

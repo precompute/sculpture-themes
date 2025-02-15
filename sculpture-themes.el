@@ -1,18 +1,18 @@
 ;;; sculpture-themes.el --- Themes with vivid colors -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: April 24, 2024
-;; Version: 1.5.1
+;; Modified: February 16, 2025
+;; Version: 1.5.2
 ;; Package-Requires: ((emacs "26.1"))
 
 ;; sculpture-theme-dark : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
