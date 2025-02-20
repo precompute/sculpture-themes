@@ -1,6 +1,6 @@
 ;;; sculpture-themes-pastel-theme.el --- Dark theme with vivid colors -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
@@ -15,7 +15,7 @@
 ;; sculpture-themes-pastel : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

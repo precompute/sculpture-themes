@@ -15,7 +15,7 @@
 ;; sculpture-themes-dark : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
-;; Copyright (C) 2024 Precompute
+;; Copyright (C) 2025 Precompute
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -160,6 +160,7 @@
    `(italic                     ((,class (:slant italic))))
    `(underline                  ((,class (:underline t))))
    `(variable-pitch             ((,class (:height 1.0))))
+   `(variable-pitch-text        ((,class (:height 1.0 :inherit variable-pitch))))
    `(sculpture-themes-dark-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
    `(fringe                     ((,class (:background ,bg))))
    `(vertical-border            ((,class (:background ,bg :foreground ,bg))))
