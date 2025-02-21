@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: February 16, 2025
-;; Version: 1.5.2
+;; Modified: February 21, 2025
+;; Version: 1.5.3
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -190,6 +190,8 @@
    `(highlight-numbers-number ((,class (:foreground ,ot18))))
    `(highlight-quoted-symbol  ((,class (:foreground ,ot12))))
    `(highlight-quoted-quote   ((,class (:foreground ,ot01))))
+
+   `(apropos-symbol ((,class (:height 1.2 :foreground ,ot05))))
 
    `(custom-button         ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style released-button)))))
    `(custom-button-pressed ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style pressed-button)))))
