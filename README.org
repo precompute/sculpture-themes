@@ -67,41 +67,70 @@ These screenshots use the mode-line colors from the themes.
 
 ** Supported Modes
 
-+ default emacs faces
++ base
++ breadcrumb
++ caml
 + centaur-tabs
 + company
++ corfu
++ default emacs faces
++ diff
++ diff-hl
 + dired
 + diredfl
 + dired-subtree
++ doom-modeline
 + ediff
++ eglot
++ Eldoc
++ eldoc-box
 + elfeed
 + evil
++ evil-goggles
 + flycheck
++ flymake
++ font-lock
 + git-gutter
++ Header line and mode line
 + highlight-indentation
 + highlight-indent-guides
 + ido
 + imenu-list
-+ info
++ Info mode
 + isearch
 + Ivy
++ Line Numbers
 + lsp
++ lsp-mode
 + magit
 + markdown
++ merlin
++ message
 + occur
 + olivetti
 + orderless
 + org
++ org-mode
++ outline
 + paren
-+ rainbow-delimter
++ popup
++ pulsar
++ rainbow-delimiter
++ rjsx
 + shr
 + Swiper
 + tabs
 + transient
++ tree-sitter
 + treesitter
++ tuareg (OCaml)
 + vertico
++ vundo
++ web-mode
++ which-key
 + workspace
 + writegood
++ xref
 + A few custom faces for modeline, org, etc.
 
 Feel free to open an Issue for new faces / modes.

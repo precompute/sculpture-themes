@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: February 21, 2025
-;; Version: 1.5.3
+;; Modified: March 03, 2025
+;; Version: 1.5.4
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -919,7 +919,15 @@
 ;;;;;; merlin
    `(merlin-type-face ((,class (:inherit font-lock-type-face))))
    `(merlin-compilation-error-face ((,class (:inherit error))))
-   `(merlin-compilation-warning-face ((,class (:inherit font-lock-warning-face))))))
+   `(merlin-compilation-warning-face ((,class (:inherit font-lock-warning-face))))
+
+;;;;;; breadcrumb
+   `(breadcrumb-face                ((,class (:foreground ,cs01 :inherit variable-pitch :height 0.9))))
+   `(breadcrumb-imenu-leaf-face     ((,class (:background ,ot06 :foreground ,ot05 :inherit variable-pitch))))
+   `(breadcrumb-imenu-crumbs-face   ((,class (:background ,ot06 :foreground ,ot04 :inherit variable-pitch))))
+   `(breadcrumb-project-base-face   ((,class (:background ,ot06 :foreground ,ot02 :inherit variable-pitch))))
+   `(breadcrumb-project-leaf-face   ((,class (:background ,ot06 :foreground ,ot05 :inherit variable-pitch))))
+   `(breadcrumb-project-crumbs-face ((,class (:background ,ot06 :foreground ,ot04 :inherit variable-pitch))))))
 
 (provide-theme 'sculpture-themes-dark)
 
