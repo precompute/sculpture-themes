@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: March 03, 2025
-;; Version: 1.5.4
+;; Modified: April 16, 2025
+;; Version: 1.5.5
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -662,9 +662,9 @@
    `(magit-blame-highlight        ((,class (:inherit head-outline-3 :background ,bw03))))
 
 ;;;;;; diff
-   `(diff-refine-removed ((,class (:inherit magit-diff-removed-highlight))))
+   `(diff-refine-removed ((,class (:inherit bold :foreground ,cs01 :background ,cs00))))
    `(diff-refine-changed ((,class (:foreground ,ot05 :background ,ot30))))
-   `(diff-refine-added   ((,class (:inherit magit-diff-added-highlight))))
+   `(diff-refine-added   ((,class (:inherit bold :foreground ,bg :background ,ot01))))
 
 ;;;;;; orderless
    `(orderless-match-face-0 ((,class (:inherit (sculpture-themes-dark-head-outline-2 bold)))))

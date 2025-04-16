@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: March 03, 2025
-;; Version: 1.5.4
+;; Modified: April 16, 2025
+;; Version: 1.5.5
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -123,13 +123,29 @@
       (ot11 "#201F0E")
       (ot11-light "#DFE0F1")
       (ot12 "#D0CA62")
+      (ot13 "#313020")
       (ot14 "#020202")
       (ot14-light "#ECEEE2")
       (ot15 "#161F14")
       (ot16 "#5F1416")
       (ot17 "#2E2C0A")
       (ot18 "#96A880")
-      (ot19 "#F61E2F"))
+      (ot19 "#F61E2F")
+      (ot20 "#FD8000")
+      (ot21 "#31666A")
+      (ot22 "#EEC8B1")
+      (ot23 "#E6B18F")
+      (ot24 "#ED235C")
+      (ot25 "#AD0E3B")
+      (ot26 "#1C1C0D")
+      (ot27 "#0A0A04")
+      (ot28 "#B22744")
+      (ot29 "#3E0F07")
+      (ot30 "#03141E")
+      (ot31 "#7E7400")
+      (ot32 "#1F3603")
+      (ot33 "#1D1B3D")
+      (ot34 "#071E03"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -584,6 +600,11 @@
    `(magit-blame-margin           ((,class (:inherit head-outline-3 :background ,bw11))))
    `(magit-blame-heading          ((,class (:inherit head-outline-3 :background ,bw11))))
    `(magit-blame-highlight        ((,class (:inherit head-outline-3 :background ,bw11))))
+
+;;;;;; diff
+   `(diff-refine-removed ((,class (:inherit bold :foreground ,cs01 :background ,cs00))))
+   `(diff-refine-changed ((,class (:foreground ,ot05 :background ,ot30))))
+   `(diff-refine-added   ((,class (:inherit bold :foreground ,bg :background ,ot01))))
 
 ;;;;;; orderless
    `(orderless-match-face-0 ((,class (:inherit sculpture-themes-light-head-outline-2 :weight bold))))
