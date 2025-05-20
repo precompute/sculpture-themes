@@ -6,7 +6,7 @@
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 20, 2025
-;; Version: 1.6
+;; Version: 1.6.1
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -148,7 +148,8 @@
       (ot31 "#7E7400")
       (ot32 "#1F3603")
       (ot33 "#1D1B3D")
-      (ot34 "#071E03"))
+      (ot34 "#071E03")
+      (ot35 "#052142"))
 ;;;;; definitions
 ;;;;;; base
   (custom-theme-set-faces
@@ -172,7 +173,7 @@
 
    `(default              ((,class (:foreground ,fg :background ,bg))))
    `(error                ((,class (:foreground ,cs00))))
-   `(highlight            ((,class (:background ,cs02))))
+   `(highlight            ((,class (:background ,ot35))))
    `(match                ((,class (:foreground ,ot01))))
    `(menu                 ((,class (:foreground ,fg :background ,bg))))
    `(minibuffer-prompt    ((,class (:foreground ,fg :slant italic))))
