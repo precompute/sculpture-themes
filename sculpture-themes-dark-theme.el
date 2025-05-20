@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: April 16, 2025
-;; Version: 1.5.5
+;; Modified: May 20, 2025
+;; Version: 1.6
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -209,7 +209,7 @@
    `(font-lock-keyword-face              ((,class (:foreground ,ot04 :inherit (bold)))))
    `(font-lock-string-face               ((,class (:foreground ,ha00 :background ,bg))))
    `(font-lock-type-face                 ((,class (:foreground ,ha07))))
-   `(font-lock-variable-name-face        ((,class (:foreground ,ot04))))
+   `(font-lock-variable-name-face        ((,class (:foreground ,cs02))))
    `(font-lock-variable-use-face         ((,class (:foreground ,ot01))))
    `(font-lock-property-name-face        ((,class (:foreground ,ot08))))
    `(font-lock-property-use-face         ((,class (:foreground ,ot07))))
