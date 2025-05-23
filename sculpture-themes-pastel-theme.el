@@ -6,7 +6,7 @@
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: May 20, 2025
-;; Version: 1.6.1
+;; Version: 1.6.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"

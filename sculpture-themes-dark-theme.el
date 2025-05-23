@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 20, 2025
-;; Version: 1.6.1
+;; Modified: May 24, 2025
+;; Version: 1.6.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -257,19 +257,30 @@
    `(doom-modeline-buffer-modified-i ((,class (:inherit (bold variable-pitch) :foreground ,ot16 :background ,bg))))
 
 ;;;;;; Info mode
-   `(Info-quoted       ((,class (:foreground ,ha02 :background ,bg))))
+   `(Info-quoted       ((,class (:foreground ,ha02 :background ,bg :inherit fixed-pitch))))
    `(info-header-node  ((,class (:foreground ,fg   :background ,bg :inherit (bold)))))
    `(info-header-xref  ((,class (:foreground ,fg   :background ,bg :underline t))))
    `(info-node         ((,class (:foreground ,cs02 :background ,bg))))
    `(info-index-match  ((,class (:foreground ,fg   :background ,ha10))))
    `(info-menu-header  ((,class (:foreground ,fg   :background ,ha00 :weight bold))))
    `(info-menu-star    ((,class (:foreground ,fg   :background ,ha04))))
-   `(info-title-1      ((,class (:foreground ,ha00 :background ,bg :inherit (bold)))))
-   `(info-title-2      ((,class (:foreground ,ha04 :background ,bg :inherit (bold)))))
-   `(info-title-3      ((,class (:foreground ,ha07 :background ,bg :inherit (bold)))))
-   `(info-title-4      ((,class (:foreground ,ha11 :background ,bg :inherit (bold)))))
+   `(info-title-1      ((,class (:foreground ,ha00 :background ,bg :inherit bold :height 1.3))))
+   `(info-title-2      ((,class (:foreground ,ha04 :background ,bg :inherit bold :height 1.2))))
+   `(info-title-3      ((,class (:foreground ,ha07 :background ,bg :inherit bold :height 1.1))))
+   `(info-title-4      ((,class (:foreground ,ha11 :background ,bg :inherit bold))))
    `(info-xref         ((,class (:foreground ,ha01 :background ,bg :underline t))))
    `(info-xref-visited ((,class (:foreground ,ha12 :background ,bg :underline t))))
+   `(info-colors-lisp-code-block       ((,class (:foreground ,cs01 :inherit fixed-pitch))))
+   `(info-colors-ref-item-type         ((,class (:inherit (font-lock-type-face fixed-pitch)))))
+   `(info-colors-ref-item-macro        ((,class (:inherit (font-lock-keyword-face fixed-pitch)))))
+   `(info-colors-ref-item-other        ((,class (:inherit (font-lock-number-face fixed-pitch)))))
+   `(info-colors-ref-item-command      ((,class (:inherit (font-lock-punctuation-face fixed-pitch)))))
+   `(info-colors-ref-item-constant     ((,class (:inherit (font-lock-constant-face fixed-pitch)))))
+   `(info-colors-ref-item-function     ((,class (:inherit (font-lock-function-name-face fixed-pitch)))))
+   `(info-colors-ref-item-variable     ((,class (:inherit (font-lock-variable-name-face fixed-pitch)))))
+   `(info-colors-ref-item-user-option  ((,class (:inherit (font-lock-variable-use-face fixed-pitch)))))
+   `(info-colors-ref-item-special-form ((,class (:inherit (font-lock-keyword-face fixed-pitch)))))
+   `(info-colors-ref-item-syntax-class ((,class (:inherit (font-lock-preprocessor-face fixed-pitch)))))
 
 ;;;;;; Info mode
    `(helpful-heading ((,class (:inherit variable-pitch :foreground ,ha02 :height 1.1 :underline t))))
