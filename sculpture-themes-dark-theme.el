@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 28, 2025
-;; Version: 1.7
+;; Modified: May 30, 2025
+;; Version: 1.7.1
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -194,6 +194,8 @@
 
    `(apropos-symbol ((,class (:height 1.2 :foreground ,ot05))))
 
+   `(fill-column-indicator ((,class (:foreground ,ot27))))
+
    `(custom-button         ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style released-button)))))
    `(custom-button-pressed ((,class (:foreground ,fg :background ,bw02 :box (:line-width 2 :color ,bw08 :style pressed-button)))))
 ;;;;;; popup
@@ -231,7 +233,7 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,ot19))))
 
 ;;;;;; Header line and mode line
-   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,ot04)))))
+   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,ot22)))))
    `(mode-line-buffer-id        ((,class (:inherit variable-pitch :foreground ,ot05))))
    `(mode-line-emphasis         ((,class (:inherit variable-pitch :foreground ,bw12))))
    `(mode-line-highlight        ((,class (:inherit variable-pitch :foreground ,ha00))))
