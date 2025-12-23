@@ -701,6 +701,11 @@
    `(vertico-group-title ((,class (:inherit (sculpture-themes-dark-head-outline-7 variable-pitch)))))
    `(vertico-quick1      ((,class (:background ,ot25))))
    `(vertico-quick2      ((,class (:background ,ot24))))
+   `(vertico-posframe-border ((,class (:background ,ot05))))
+   `(vertico-posframe-border-2 ((,class (:background ,ot04))))
+   `(vertico-posframe-border-3 ((,class (:background ,cs01))))
+   `(vertico-posframe-border-4 ((,class (:background ,cs02))))
+   `(vertico-posframe-border-fallback ((,class (:background ,ot02))))
 
 ;;;;;; olivetti
    `(olivetti-fringe ((,class (:background ,bg))))
