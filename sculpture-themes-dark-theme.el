@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: May 30, 2025
-;; Version: 1.7.1
+;; Modified: January 13, 2026
+;; Version: 1.7.2
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -15,7 +15,7 @@
 ;; sculpture-themes-dark : A dark theme for emacs with vivid colors, inspired by
 ;; coloring pigments.
 
-;; Copyright (C) 2025 Precompute
+;; Copyright (C) 2026 Precompute
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -164,10 +164,10 @@
    `(variable-pitch-text        ((,class (:height 1.0 :inherit variable-pitch))))
    `(sculpture-themes-dark-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
    `(fringe                     ((,class (:background ,bg))))
-   `(vertical-border            ((,class (:background ,bg :foreground ,bg))))
-   `(window-divider             ((,class (:background ,bg :foreground ,bg))))
-   `(window-divider-first-pixel ((,class (:background ,bg :foreground ,bg))))
-   `(window-divider-last-pixel  ((,class (:background ,bg :foreground ,bg))))
+   `(vertical-border            ((,class (:background ,ot22 :foreground ,ot22))))
+   `(window-divider             ((,class (:background ,ot22 :foreground ,ot22))))
+   `(window-divider-first-pixel ((,class (:background ,cs01 :foreground ,cs01))))
+   `(window-divider-last-pixel  ((,class (:background ,cs01 :foreground ,cs01))))
    `(hl-line                    ((,class (:background ,ot06))))
    `(button                     ((,class (:foreground ,fg :background ,ot06 :box (:line-width 2 :color ,bw06 :style released-button)))))
 
