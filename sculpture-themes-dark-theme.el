@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: January 13, 2026
-;; Version: 1.7.2
+;; Modified: January 30, 2026
+;; Version: 1.8
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -233,13 +233,13 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,ot19))))
 
 ;;;;;; Header line and mode line
-   `(mode-line                  ((,class (:inherit variable-pitch :foreground ,cs01 :background ,bw00 :box (:line-width 1 :color ,ot22)))))
-   `(mode-line-buffer-id        ((,class (:inherit variable-pitch :foreground ,ot05))))
-   `(mode-line-emphasis         ((,class (:inherit variable-pitch :foreground ,bw12))))
-   `(mode-line-highlight        ((,class (:inherit variable-pitch :foreground ,ha00))))
-   `(mode-line-inactive         ((,class (:inherit variable-pitch :foreground ,bw08 :background ,ha09 :box (:line-width 1 :color ,bw02)))))
-   `(header-line                ((,class (:inherit (variable-pitch mode-line)))))
-   `(header-line-highlight      ((,class (:inherit (variable-pitch mode-line-highlight)))))
+   `(mode-line                  ((,class (:inherit :foreground ,cs01 :background ,bw00))))
+   `(mode-line-buffer-id        ((,class (:inherit :foreground ,ot05))))
+   `(mode-line-emphasis         ((,class (:inherit :foreground ,bw12))))
+   `(mode-line-highlight        ((,class (:inherit :foreground ,ha00))))
+   `(mode-line-inactive         ((,class (:inherit :foreground ,bw08 :background ,ha09))))
+   `(header-line                ((,class (:inherit mode-line))))
+   `(header-line-highlight      ((,class (:inherit mode-line-highlight))))
 ;;;;;;; doom-modeline
    `(doom-modeline-bar           ((,class (:background ,ot04))))
    ;; `(doom-modeline-bar-inactive  ((,class (:inherit (variable-pitch mode-line-highlight)))))
