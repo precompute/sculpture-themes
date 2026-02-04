@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: January 30, 2026
-;; Version: 1.8
+;; Modified: February 04, 2026
+;; Version: 1.9
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -163,7 +163,7 @@
    `(variable-pitch             ((,class (:height 1.0))))
    `(variable-pitch-text        ((,class (:height 1.0 :inherit variable-pitch))))
    `(sculpture-themes-dark-variable-pitch-italic      ((,class (:inherit variable-pitch :slant italic))))
-   `(fringe                     ((,class (:background ,bg))))
+   `(fringe                     ((,class (:background ,bg :foreground ,ot12))))
    `(vertical-border            ((,class (:background ,ot22 :foreground ,ot22))))
    `(window-divider             ((,class (:background ,ot22 :foreground ,ot22))))
    `(window-divider-first-pixel ((,class (:background ,cs01 :foreground ,cs01))))
