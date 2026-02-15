@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: February 04, 2026
-;; Version: 1.9
+;; Modified: February 15, 2026
+;; Version: 1.10
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -681,10 +681,10 @@
    `(diff-refine-added   ((,class (:inherit bold :foreground ,bg :background ,ot01))))
 
 ;;;;;; orderless
-   `(orderless-match-face-0 ((,class (:inherit (sculpture-themes-dark-head-outline-2 bold)))))
-   `(orderless-match-face-1 ((,class (:inherit (sculpture-themes-dark-head-outline-4 bold)))))
-   `(orderless-match-face-2 ((,class (:inherit (sculpture-themes-dark-head-outline-5 bold)))))
-   `(orderless-match-face-3 ((,class (:inherit (sculpture-themes-dark-head-outline-3 bold)))))
+   `(orderless-match-face-0 ((,class (:inverse-video t :inherit (sculpture-themes-dark-head-outline-2 bold)))))
+   `(orderless-match-face-1 ((,class (:inverse-video t :inherit (sculpture-themes-dark-head-outline-4 bold)))))
+   `(orderless-match-face-2 ((,class (:inverse-video t :inherit (sculpture-themes-dark-head-outline-5 bold)))))
+   `(orderless-match-face-3 ((,class (:inverse-video t :inherit (sculpture-themes-dark-head-outline-3 bold)))))
 
 ;;;;;; ediff
    `(ediff-odd-diff-Ancestor ((,class (:background ,ot06))))

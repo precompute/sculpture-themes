@@ -33,6 +33,8 @@ Vivid colors over a completely black background.
 
 Sculpture's dark version, but with the foreground and background switched.  Two colors modified for readability.
 
+NOTE: Sculpture-light is not maintained.  I use [[https://github.com/precompute/hyperstitional-themes][Hyperstitional Themes]] for light themes.
+
 ** Screenshots
 
 [[images/sculpture.jpg]]
