@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: February 15, 2026
-;; Version: 1.10
+;; Modified: July 01, 2026
+;; Version: 1.11
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -286,6 +286,10 @@
 
 ;;;;;; Info mode
    `(helpful-heading ((,class (:inherit variable-pitch :foreground ,ha02 :height 1.1 :underline t))))
+
+;;;;;; Woman mode
+   `(woman-bold ((,class (:inherit bold :foreground ,cs00))))
+   `(woman-italic ((,class (:inherit italic :foreground ,ot18))))
 
 ;;;;;; Eldoc
    `(eldoc-highlight-function-argument ((,class (:inherit (bold region)))))
