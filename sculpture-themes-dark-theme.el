@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: July 01, 2026
-;; Version: 1.11
+;; Modified: August 07, 2026
+;; Version: 1.12
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -568,6 +568,20 @@
    `(show-paren-match            ((,class (:underline (:color ,ha02 :line-width -1)))))
    `(show-paren-mismatch         ((,class (:underline (:color ,ha11 :line-width -1)))))
    `(show-paren-match-expression ((,class (:background ,ot27))))
+
+;;;;;; Whitespace Mode
+   `(whitespace-tab                    ((,class (:background ,ha09 :foreground ,ha02))))
+   `(whitespace-line                   ((,class (:background ,ha09 :foreground ,ha12))))
+   `(whitespace-empty                  ((,class (:background ,ha04 :foreground ,bw14))))
+   `(whitespace-space                  ((,class (:background ,ha09 :foreground ,bw02))))
+   `(whitespace-hspace                 ((,class (:background ,ha09 :foreground ,bw04))))
+   `(whitespace-newline                ((,class (:background ,ot01 :foreground ,bw09))))
+   `(whitespace-trailing               ((,class (:background ,ha05 :foreground ,bw09))))
+   `(whitespace-big-indent             ((,class (:background ,ha06 :foreground ,bw09))))
+   `(whitespace-indentation            ((,class (:background ,ha04 :foreground ,bw09))))
+   `(whitespace-space-after-tab        ((,class (:background ,ha04 :foreground ,bw09))))
+   `(whitespace-space-before-tab       ((,class (:background ,ha06 :foreground ,bw09))))
+   `(whitespace-missing-newline-at-eof ((,class (:background ,cs02 :foreground ,bw09))))
 
 ;;;;;; shr
    `(shr-link ((,class (:inherit org-link))))
