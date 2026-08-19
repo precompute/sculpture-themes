@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: August 07, 2026
-;; Version: 1.12
+;; Modified: August 19, 2026
+;; Version: 1.13
 ;; Package-Requires: ((emacs "26.1"))
 
 ;; sculpture-theme-dark : A dark theme for emacs with vivid colors, inspired by

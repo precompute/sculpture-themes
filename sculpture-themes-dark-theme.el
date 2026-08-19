@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: August 07, 2026
-;; Version: 1.12
+;; Modified: August 19, 2026
+;; Version: 1.13
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -614,6 +614,15 @@
    `(which-key-command-description-face ((,class (:foreground ,ha04))))
    `(which-key-separator-face ((,class (:foreground ,bw11 :background ,bg))))
 
+;;;;;; tabs
+   `(tab-bar               ((,class (:foreground ,fg :background ,bg :underline ,ot05))))
+   `(tab-bar-tab           ((,class (:foreground ,cs02))))
+   `(tab-bar-tab-inactive  ((,class (:foreground ,cs01))))
+   `(tab-bar-tab-highlight ((,class (:foreground ,cs02))))
+   `(tab-bar-tab-ungrouped      ((,class (:foreground ,ot00))))
+   `(tab-bar-tab-group-current  ((,class (:foreground ,ot09))))
+   `(tab-bar-tab-group-inactive ((,class (:foreground ,ot10))))
+
 ;;;;;; company
    `(company-tooltip-selection  ((,class (:foreground ,fg :underline (:color ,bw07) :inherit (semibold)))))
    `(company-tooltip-common     ((,class (:foreground ,fg))))
@@ -802,12 +811,7 @@
    `(tree-sitter-hl-face:variable.parameter ((,class (:foreground ,ot23))))
    `(tree-sitter-hl-face:variable.special   ((,class (:foreground ,ot23))))
 
-;;;;;; tabs
-   `(tab-line                   ((,class (:inherit mode-line))))
-   `(tab-bar                    ((,class (:inherit mode-line))))
-   `(tab-bar-tab                ((,class (:inherit mode-line))))
-   `(tab-bar-tab-inactive       ((,class (:inherit mode-line))))
-
+;;;;;; centaur-tabs
    `(centaur-tabs-default                    ((,class (:inherit variable-pitch :foreground ,bw12 :background ,bw00))))
    `(centaur-tabs-selected                   ((,class (:inherit (variable-pitch mode-line-buffer-id)))))
    `(centaur-tabs-unselected                 ((,class (:inherit (variable-pitch tab-bar-tab-inactive)))))
