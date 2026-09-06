@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: August 19, 2026
-;; Version: 1.13
+;; Modified: September 07, 2026
+;; Version: 1.14
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -569,6 +569,14 @@
    `(show-paren-mismatch         ((,class (:underline (:color ,ha11 :line-width -1)))))
    `(show-paren-match-expression ((,class (:background ,ot27))))
 
+;;;;;; completion preview
+   `(completion-preview           ((,class (:inherit italic :foreground ,cs01 :box (:color ,cs00 :line-width -1)))))
+   `(completion-preview-common    ((,class (:inherit completion-preview :box (:color ,ot05 :line-width -1)))))
+   `(completion-preview-exact     ((,class (:inherit completion-preview-common :box (:color ,cs00 :line-width -1)))))
+   ;; `(completion-preview           ((,class (:inherit italic :foreground ,cs01 :underline (:color ,cs00 :style dashes)))))
+   ;; `(completion-preview-common    ((,class (:inherit completion-preview :underline (:color ,ot05 :style dashes)))))
+   ;; `(completion-preview-exact     ((,class (:inherit completion-preview-common :underline (:color ,cs00 :style dashes)))))
+
 ;;;;;; Whitespace Mode
    `(whitespace-tab                    ((,class (:background ,ha09 :foreground ,ha02))))
    `(whitespace-line                   ((,class (:background ,ha09 :foreground ,ha12))))
@@ -614,7 +622,7 @@
    `(which-key-command-description-face ((,class (:foreground ,ha04))))
    `(which-key-separator-face ((,class (:foreground ,bw11 :background ,bg))))
 
-;;;;;; tabs
+;;;;;; tab-bar
    `(tab-bar               ((,class (:foreground ,fg :background ,bg :underline ,ot05))))
    `(tab-bar-tab           ((,class (:foreground ,cs02))))
    `(tab-bar-tab-inactive  ((,class (:foreground ,cs01))))
@@ -761,6 +769,10 @@
    `(flymake-warning-echo-at-eol ((,class (:inherit flymake-warning))))
    `(flymake-end-of-line-diagnostics-face ((,class (:inherit region font-lock-keyword-face))))
 
+;;;;;; elisp-mode
+   ;; elisp-unknown-call
+   ;; elisp-non-local-exit
+   ;; elisp-rx
 ;;;;;; tree-sitter
    `(tree-sitter-hl-face:embedded ((,class (:foreground ,bw13))))
 
