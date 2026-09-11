@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: September 11, 2026
-;; Version: 1.16
+;; Modified: September 12, 2026
+;; Version: 1.17
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -303,8 +303,8 @@
 ;;;;;; dired
    `(dired-mark           ((,class (:foreground ,cs01 :inherit bold))))
    `(dired-marked         ((,class (:foreground ,cs01 :underline (:color ,cs01 :style dashes) :inherit (bold italic)))))
-   `(dired-directory      ((,class (:background ,ot05 :inherit bold))))
-   `(dired-header         ((,class (:background ,ha07 :inherit bold :height 1.15))))
+   `(dired-directory      ((,class (:background ,ot05 :inherit bold :box (:color ,ot05 :line-width (3 . -1))))))
+   `(dired-header         ((,class (:background ,ha07 :inherit (variable-pitch bold) :height 1.15 :box (:color ,ha07 :line-width (6 . 3))))))
    `(dired-set-id         ((,class (:foreground ,fg :background ,ha12 :inherit bold))))
    `(dired-flagged        ((,class (:foreground ,fg :background ,cs00 :inherit (bold italic)))))
    `(dired-ignored        ((,class (:foreground ,bw09))))
