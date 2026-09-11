@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: September 07, 2026
-;; Version: 1.14
+;; Modified: September 11, 2026
+;; Version: 1.15
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -301,20 +301,20 @@
    `(evil-ex-substitute-replacement ((,class (:foreground ,ot04 :inherit (bold)))))
 
 ;;;;;; diredfl
-   `(diredfl-dir-name               ((,class (:foreground ,fg :inherit (bold variable-pitch)))))
-   `(diredfl-number                 ((,class (:foreground ,bw06))))
+   `(diredfl-dir-name               ((,class (:foreground ,cs02 :inherit (bold variable-pitch)))))
+   `(diredfl-number                 ((,class (:foreground ,ot04))))
    `(diredfl-symlink                ((,class (:foreground ,ot05))))
-   `(diredfl-no-priv                ((,class (:foreground ,bw04))))
+   `(diredfl-no-priv                ((,class (:foreground ,bg))))
    `(diredfl-dir-priv               ((,class (:foreground ,ha02))))
    `(diredfl-read-priv              ((,class (:foreground ,ha01))))
    `(diredfl-rare-priv              ((,class (:foreground ,ha01))))
    `(diredfl-link-priv              ((,class (:foreground ,ha01))))
-   `(diredfl-file-name              ((,class (:foreground ,fg :inherit variable-pitch))))
+   `(diredfl-file-name              ((,class (:foreground ,cs01 :inherit variable-pitch))))
    `(diredfl-exec-priv              ((,class (:foreground ,ha11))))
-   `(diredfl-date-time              ((,class (:foreground ,bw08 :underline t))))
+   `(diredfl-date-time              ((,class (:foreground ,ot05 :underline t))))
    `(diredfl-write-priv             ((,class (:foreground ,ha01))))
    `(diredfl-other-priv             ((,class (:foreground ,ha01))))
-   `(diredfl-file-suffix            ((,class (:foreground ,bw09 :inherit variable-pitch))))
+   `(diredfl-file-suffix            ((,class (:foreground ,cs00 :inherit variable-pitch))))
    `(diredfl-dir-heading            ((,class (:foreground ,ha02 :box t))))
    `(diredfl-autofile-name          ((,class (:foreground ,bw09))))
    `(diredfl-flag-mark              ((,class (:foreground ,ha02))))
@@ -573,9 +573,6 @@
    `(completion-preview           ((,class (:inherit italic :foreground ,cs01 :box (:color ,cs00 :line-width -1)))))
    `(completion-preview-common    ((,class (:inherit completion-preview :box (:color ,ot05 :line-width -1)))))
    `(completion-preview-exact     ((,class (:inherit completion-preview-common :box (:color ,cs00 :line-width -1)))))
-   ;; `(completion-preview           ((,class (:inherit italic :foreground ,cs01 :underline (:color ,cs00 :style dashes)))))
-   ;; `(completion-preview-common    ((,class (:inherit completion-preview :underline (:color ,ot05 :style dashes)))))
-   ;; `(completion-preview-exact     ((,class (:inherit completion-preview-common :underline (:color ,cs00 :style dashes)))))
 
 ;;;;;; Whitespace Mode
    `(whitespace-tab                    ((,class (:background ,ha09 :foreground ,ha02))))
