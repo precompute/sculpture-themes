@@ -6,7 +6,7 @@
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
 ;; Modified: September 11, 2026
-;; Version: 1.15
+;; Version: 1.16
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -299,6 +299,20 @@
    `(evil-ex-search                 ((,class (:foreground ,cs00 :background ,ha02 :inherit (bold)))))
    `(evil-ex-substitute-matches     ((,class (:foreground ,cs00 :strike-through t :inherit (bold)))))
    `(evil-ex-substitute-replacement ((,class (:foreground ,ot04 :inherit (bold)))))
+
+;;;;;; dired
+   `(dired-mark           ((,class (:foreground ,cs01 :inherit bold))))
+   `(dired-marked         ((,class (:foreground ,cs01 :underline (:color ,cs01 :style dashes) :inherit (bold italic)))))
+   `(dired-directory      ((,class (:background ,ot05 :inherit bold))))
+   `(dired-header         ((,class (:background ,ha07 :inherit bold :height 1.15))))
+   `(dired-set-id         ((,class (:foreground ,fg :background ,ha12 :inherit bold))))
+   `(dired-flagged        ((,class (:foreground ,fg :background ,cs00 :inherit (bold italic)))))
+   `(dired-ignored        ((,class (:foreground ,bw09))))
+   `(dired-special        ((,class (:underline (:color ,cs02 :style dots)))))
+   `(dired-warning        ((,class (:foreground ,bg :background ,ot19))))
+   `(dired-perm-write     ((,class (:foreground ,bg :background ,ot02 :inherit italic))))
+   `(dired-symlink        ((,class (:underline (:color ,ot04 :style dots)))))
+   `(dired-broken-symlink ((,class (:foreground ,cs00 :underline (:color ,ot04 :style dots)))))
 
 ;;;;;; diredfl
    `(diredfl-dir-name               ((,class (:foreground ,cs02 :inherit (bold variable-pitch)))))
