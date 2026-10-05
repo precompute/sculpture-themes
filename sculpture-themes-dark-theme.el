@@ -5,8 +5,8 @@
 ;; Author: Precompute <git@precompute.net>
 ;; URL: https://github.com/precompute/sculpture-theme
 ;; Created: January 06, 2021
-;; Modified: September 26, 2026
-;; Version: 1.20
+;; Modified: October 05, 2026
+;; Version: 1.21
 
 ;; Local variables:
 ;; package-lint-main-file: "sculpture-themes.el"
@@ -895,8 +895,8 @@
 
 ;;;;;; eglot
    `(eglot-highlight-symbol-face ((,class (:background ,ot33 :inherit (bold)))))
-   `(eglot-semantic-comment      ((,class (:foreground ,ha04 :inherit (font-lock-comment-face)))))
-   `(eglot-semantic-macro        ((,class (:foreground ,ha04 :inherit (font-lock-preprocessor-face)))))
+   `(eglot-semantic-comment      ((,class (:underline (:style dots :color ,ot22)))))
+   `(eglot-semantic-macro        ((,class (:underline (:style dots :color ,ot18)))))
 
 ;;;;;; lsp-mode
    `(lsp-ui-peek-list ((,class :background ,bw01)))
